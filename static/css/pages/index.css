@@ -1,0 +1,55 @@
+/* INDEX CSS */
+.timeline-table {
+  border-collapse: collapse;
+}
+
+.timeline-table td,
+.timeline-table th {
+  position: relative;
+}
+
+.timeline-table tr.strikeout td:before,
+.timeline-table tr.strikeout th:before {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  border-bottom: 1px solid #444;
+  width: 100%;
+}
+
+.main-page-speaker-group-row {
+  justify-content: center;
+}
+
+.main-page-speaker-block-title {
+  font-size: 1.85em;
+  font-family: "Exo";
+  color: #4e5459;
+}
+
+.main-page-speaker-name {
+  font-size: 1.2em;
+  font-family: "Exo";
+  color: #6c757d;
+}
+
+.main-page-speaker-affiliation {
+  font-size: 1em;
+  font-family: "Exo";
+  color: #6c757d;
+}
+
+.main-page-state-of-ml-talk-title {
+  font-size: 1.25em;
+  font-family: "Exo";
+  color: #4e5459;
+}
+
+.main-page-speaker-highlight {
+  text-align: center;
+}
+
+.main-page-speaker-group {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}

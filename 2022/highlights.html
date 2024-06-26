@@ -1,0 +1,601 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <!-- Required meta tags -->
+    <meta charset="utf-8"/>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    
+    <script type="text/javascript">
+      var auth0_domain = "chil.us.auth0.com";
+      var auth0_client_id = "idrCis50v8uMru0k189CZY3LXVK9tUnY";
+    </script>
+    <script src="https://cdn.auth0.com/js/auth0-spa-js/1.7/auth0-spa-js.production.js"></script>
+    <script type="text/javascript" src="/static/js/modules/auth0protect.js"></script>
+    
+
+    <link rel="icon" type="image/png" href="/static/images/favicon.png">
+
+    <!-- External CSS -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha256-93wNFzm2GO3EoByj9rKZCwGjAJAwr0nujPaOgwUt8ZQ="
+          crossorigin="anonymous"/>
+
+    <!-- External Fonts (no google for china) -->
+    <link rel="stylesheet" href="/static/css/main.css"/>
+    <!-- <link rel="stylesheet" href="/static/css/fa_regular.css"/> -->
+    <link rel="stylesheet" href="/static/css/fa_solid.css"/>
+    <link rel="stylesheet" href="/static/css/lazy_load.css"/>
+    <link rel="stylesheet" href="/static/css/typeahead.css"/>
+
+    <title>CHIL
+      
+        : Past Events
+      
+    </title>
+  
+</head>
+
+<body>
+<!-- NAV -->
+
+  
+
+  
+
+
+  
+
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light mr-auto btco-hover-menu" id="main-nav">
+    <div class="container">
+        
+        
+          <a class="navbar-brand" href="/index.html">CHIL 2024</a>
+        
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+              class="collapse navbar-collapse flex-grow-1"
+              id="navbarNav"
+        >
+          <ul class="navbar-nav ml-auto">
+              
+              <li class="nav-item ">
+                  <a class="nav-link" href="/index.html">Home</a>
+              </li>
+              
+              <li class="nav-item ">
+                  <a class="nav-link" href="/speakers.html">Speaker Bios</a>
+              </li>
+              
+              <li class="nav-item ">
+                  <a class="nav-link" href="/calendar.html">Program</a>
+              </li>
+              
+              <li class="nav-item ">
+                  <a class="nav-link" href="/proceedings.html">Papers</a>
+              </li>
+              
+
+              
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="attendDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Attend
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="attendDropdown">
+                  <!-- <li><a class="dropdown-item" href="https://forms.gle/ytAhSYkgfyWMH3Ca9">Pre-registration</a> -->
+                    
+                      <a class="dropdown-item" href="/travel.html">Plan Your Trip</a>
+                    
+                  </li>
+                </ul>
+              </li>
+              
+
+              
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="submitDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Submit
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="submitDropdown">
+                  
+                  <li>
+                      <a class="dropdown-item" href="/call-for-papers.html">Call for Papers</a>
+                  </li>
+                  
+                  <li>
+                      <a class="dropdown-item" href="/call-for-doctoral.html">Call for Doctoral Symposium</a>
+                  </li>
+                  
+                </ul>
+              </li>
+              
+
+              
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="organizationDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Organization
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="organizationDropdown">
+                  
+                  <li>
+                      <a class="dropdown-item" href="/committee.html">Committee</a>
+                  </li>
+                  
+                  <li>
+                      <a class="dropdown-item" href="/sponsor.html">Sponsorship</a>
+                  </li>
+                  
+                  <li>
+                      <a class="dropdown-item" href="/acknowledgements.html">Reviewer Acknowledgements</a>
+                  </li>
+                  
+                  <li>
+                      <a class="dropdown-item" href="/codeconduct.html">Code of Conduct</a>
+                  </li>
+                  
+                  <li>
+                      <a class="dropdown-item" href="/communityguidelines.html">Community Guidelines</a>
+                  </li>
+                  
+                </ul>
+              </li>
+              
+              
+              <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Past Events
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  
+                  <li>
+                      <a class="dropdown-item dropdown-toggle" href="#" id="navYear2023Dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">2023</a>
+                      <ul class="dropdown-menu" aria-labelledby="navYear2023Dropdown">
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                              
+                              <li><a class="dropdown-item" href="/2023/highlights.html">Highlights</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2023/proceedings.html">Proceedings</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2023/speakers.html">Speakers</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2023/invited.html">Invited</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2023/panels.html">Panels</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2023/debates.html">Debates</a></li>
+                              
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                      </ul>
+                  </li>
+                  
+                  <li>
+                      <a class="dropdown-item dropdown-toggle" href="#" id="navYear2022Dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">2022</a>
+                      <ul class="dropdown-menu" aria-labelledby="navYear2022Dropdown">
+                          
+                            
+                          
+                            
+                          
+                            
+                              
+                              <li><a class="dropdown-item" href="/2022/highlights.html">Highlights</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2022/proceedings.html">Proceedings</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2022/speakers.html">Speakers</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2022/tutorials.html">Tutorials</a></li>
+                              
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                      </ul>
+                  </li>
+                  
+                  <li>
+                      <a class="dropdown-item dropdown-toggle" href="#" id="navYear2021Dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">2021</a>
+                      <ul class="dropdown-menu" aria-labelledby="navYear2021Dropdown">
+                          
+                            
+                          
+                            
+                              
+                              <li><a class="dropdown-item" href="/2021/highlights.html">Highlights</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2021/proceedings.html">Proceedings</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2021/speakers.html">Speakers</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2021/tutorials.html">Tutorials</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2021/workshops.html">Workshops</a></li>
+                              
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                      </ul>
+                  </li>
+                  
+                  <li>
+                      <a class="dropdown-item dropdown-toggle" href="#" id="navYear2020Dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">2020</a>
+                      <ul class="dropdown-menu" aria-labelledby="navYear2020Dropdown">
+                          
+                            
+                              
+                              <li><a class="dropdown-item" href="/2020/highlights.html">Highlights</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2020/proceedings.html">Proceedings</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2020/speakers.html">Speakers</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2020/tutorials.html">Tutorials</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2020/workshops.html">Workshops</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2020/symposiums.html">Symposiums</a></li>
+                              
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                      </ul>
+                  </li>
+                  
+                </ul>
+              </li>
+              
+          </ul>
+        </div>
+    </div>
+  </nav>
+
+
+
+  <!-- User Overrides -->
+  
+
+
+  <div class="container content-wrapper">
+      <!-- Tabs -->
+      <div class="tabs">
+          
+
+      </div>
+      <!-- Content -->
+      <div class="content">
+          
+  <div class="page-header text-center">
+    <h1>Highlights from  CHIL 2022</h1>
+  </div>
+  <div class="page-content">
+    <div class="page-content live text-center">
+<!-- Slides Live-->
+<div class="row p-3">
+    <div class="col-12 bd-content">
+    <h3>Day 1</h3>
+    </div>
+</div>
+<div id="slideslive-embed" class="col-md-12 col-xs-12 my-auto p-2 hide" data-activedate="2021-04-14T23:59:00.00">
+  <div id="presentation-embed-38979174" class="slp my-auto"></div>
+  <script src='https://slideslive.com/embed_presentation.js'></script>
+  <script>
+    embed = new SlidesLiveEmbed("presentation-embed-38979174", {
+        presentationId: "38979174",
+        autoPlay: false, // change to true to autoplay the embedded presentation
+        verticalEnabled: true,
+        verticalWhenWidthLte: 480,
+    });
+  </script>
+</div>
+<div class="row p-3">
+    <div class="col-12 bd-content">
+    <h3>Day 2</h3>
+    </div>
+</div>
+<div id="slideslive-embed2" class="col-md-12 col-xs-12 my-auto p-2 hide" data-activedate="2021-04-14T23:59:00.00">
+  <div id="presentation-embed-38979175" class="slp my-auto"></div>
+  <script>
+    embed = new SlidesLiveEmbed("presentation-embed-38979175", {
+        presentationId: "38979175",
+        autoPlay: false, // change to true to autoplay the embedded presentation
+        verticalEnabled: true,
+        verticalWhenWidthLte: 480,
+    });
+  </script>
+</div>
+</div>
+
+<h3>Governing Board</h3>
+<h6><strong>General Chairs</strong></h6>
+<ul>
+<li>Dr. Tristan Naumann of Microsoft Research</li>
+<li>Dr. Joyce Ho of Emory University</li>
+</ul>
+<h6><strong>Program Chairs</strong></h6>
+<ul>
+<li>Dr. Sherri Rose of Stanford University</li>
+<li>Matthew McDermott of MIT</li>
+</ul>
+<h6><strong>Proceedings Chairs</strong></h6>
+<ul>
+<li>Dr. George Chen of Carnegie Mellon University</li>
+<li>Dr. Tom Pollard of MIT</li>
+<li>Gerardo Flores of Google</li>
+</ul>
+<h6><strong>Track Chairs</strong></h6>
+<ul>
+<li>
+<h6><strong>Models and Methods</strong></h6>
+<ul>
+<li>Dr. Rahul Krishnan of University of Toronto and Vector Institute</li>
+<li>Dr. Shalmali Joshi of Harvard University</li>
+<li>Dr. Michael Hughes of Tufts University</li>
+<li>Dr. Yuyin Zhou of Stanford</li>
+<li>Dr. Uri Shalit of Technion</li>
+</ul>
+</li>
+<li>
+<h6><strong>Applications and Practice</strong></h6>
+<ul>
+<li>Dr. Alistair Johnson of The Hospital for Sick Children</li>
+<li>Dr. Judy Gichoya of Emory University</li>
+<li>Emma Rocheteau of University of Cambridge</li>
+<li>Dr. Lifang He of Lehigh University</li>
+</ul>
+</li>
+<li>
+<h6><strong>Impact and Society</strong></h6>
+<ul>
+<li>Dr. Bobak Mortazavi of Texas A&amp;M University </li>
+<li>Dr. Stephen Pfohl of Stanford University</li>
+<li>Dr. Farzan Sasangohar of Texas A&amp;M University</li>
+</ul>
+</li>
+</ul>
+<h6><strong>Communications Chairs</strong></h6>
+<ul>
+<li>Dr. Sanja Šćepanović of Bell Labs Cambridge</li>
+<li>Emily Alsentzer of Harvard University and MIT</li>
+<li>Dr. Ayah Zirikly of Johns Hopkins University</li>
+</ul>
+<h6><strong>Finance Chairs</strong></h6>
+<ul>
+<li>Dr. Brett Beaulieu-Jones of Harvard Medical School</li>
+<li>Dr. Ahmed Alaa of Harvard University and MIT</li>
+<li>Tasmie Sarker of Association for Health Learning and Inference</li>
+</ul>
+<h6><strong>Tutorial Chairs</strong></h6>
+<ul>
+<li>Dr. Jessica Gronsbell of University of Toronto</li>
+<li>Harvineet Singh of New York University</li>
+</ul>
+<h6><strong>Virtual Chairs</strong></h6>
+<ul>
+<li>Dr. Stephanie Hyland of Microsoft Research Cambridge</li>
+<li>Dr. Ioakeim Perros of HEALTH[at]SCALE</li>
+<li>Brian Gow of MIT</li>
+</ul>
+<h6><strong>Logistics Chair</strong></h6>
+<ul>
+<li>Tasmie Sarker of Association for Health Learning and Inference</li>
+</ul>
+<h3>Steering Committee</h3>
+<ul>
+<li>Dr. Yindalon Aphinyanaphongs of NYU</li>
+<li>Dr. Leo Celi of MIT</li>
+<li>Dr. Nigam Shah of Stanford University</li>
+<li>Dr. Stephen Friend of Oxford University</li>
+<li>Dr. Alan Karthikesalingam of Google Health UK</li>
+<li>Dr. Ziad Obermeyer of University of California, Berkeley</li>
+<li>Dr. Samantha Kleinberg of Stevens Institute of Technology</li>
+<li>Dr. Anna Goldenberg of The Hospital for Sick Children Research Institute</li>
+<li>Dr. Lucila Ohno-Machado of University of California, San Diego</li>
+<li>Dr. Noemie Elhadad of Columbia University</li>
+<li>Dr. Katherine Heller at Google Research</li>
+<li>Dr. Laura Rosella of Dalla Lana School of Public Health, University of Toronto</li>
+<li>Dr. Shakir Mohamed of DeepMind</li>
+</ul>
+<h3>Sponsors</h3>
+<p>Thank you to our 2022 sponsors: HEALTH[at]SCALE (Silver), the Vector Institute (Silver) and Microsoft (Bronze)!</p>
+  </div>
+
+      </div>
+  </div>
+
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="footer bg-light p-4">
+    <div class="container">
+        <p class="float-right"><a href="#">Back to Top</a></p>
+        <p class="text-left">© 2024 CHIL Organization Committee</p>
+    </div>
+  </footer>
+
+
+
+  <!-- External Javascript libs_ext  -->
+  <script src="https://cdn.jsdelivr.net/npm/d3@5/dist/d3.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.3/dist/handlebars.min.js"
+          integrity="sha256-/PJBs6QWvXijOFIX04kZpLb6ZtSQckdOIavLWKKOgXU="
+          crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"
+          integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+          crossorigin="anonymous"></script>
+
+  <script
+          src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+          integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+          crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+          integrity="sha256-2JaAhvdQnfNMMnhWPauHOZ2k+dzftBmBjjownu3HC4g="
+          crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/min/moment.min.js"
+          integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ="
+          crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/moment-timezone@0.5.28/builds/moment-timezone-with-data.min.js"
+          integrity="sha256-IWYg4uIC8/erItNXYvLtyYHioRi2zT1TFva8qaAU/ww="
+          crossorigin="anonymous"></script>
+
+  <!-- Library libs_ext -->
+  <script type="text/javascript" src="/static/js/libs_ext/typeahead.bundle.js"></script>
+
+  <!--    Internal Libs -->
+  <script type="text/javascript" src="/static/js/data/api.js"></script>
+
+  <!-- Google Analytics -->
+  <script
+          async
+          type="text/javascript"
+          src="https://www.googletagmanager.com/gtag/js?id=UA-"></script>
+
+  <script type="text/javascript">
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag("js", new Date());
+    gtag("config", "UA-");
+  </script>
+
+  <!-- Code for hash tags -->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      if (window.location.hash !== "") {
+        $(`a[href="${window.location.hash}"]`).tab("show");
+      }
+
+      $("a[data-toggle='tab']").on("shown.bs.tab", function (e) {
+        const hash = $(e.target).attr("href");
+        if (hash.substr(0, 1) === "#") {
+          const position = $(window).scrollTop();
+          window.location.replace(`#${hash.substr(1)}`);
+          $(window).scrollTop(position);
+        }
+      });
+
+      // Nested dropdown navigation menu
+      var ddHoverOrClick = function (e) {
+        var $el = $(this);
+        var $parent = $(this).offsetParent('.dropdown-menu');
+
+        if (!$(this).next().hasClass('show')) {
+            $(this).parents('.dropdown-menu').first().find('.show').removeClass('show');
+        }
+
+        var $subMenu = $(this).next('.dropdown-menu');
+        $subMenu.toggleClass('show');
+
+        $(this).parent('li').toggleClass('show');
+
+        $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function (e) {
+            $('.dropdown-menu .show').removeClass('show');
+        });
+
+         if (!$parent.parent().hasClass('navbar-nav')) {
+            $el.next().css({
+              "top": $el[0].offsetTop,
+              "left": -$parent.outerWidth()
+            });
+        }
+
+        return false;
+      };
+
+      $('.dropdown-menu a.dropdown-toggle').click(ddHoverOrClick).hover(ddHoverOrClick).on('touchstart', ddHoverOrClick);
+    });
+  </script>
+
+  <!-- Prevent focus from jumping to embedded rocket.chat with an iframe id="chatFrame" -->
+  <script type="text/javascript">
+    if ($("#chatFrame").length > 0) {
+          $("#chatFrame").hide();
+          $("#chatFrame").on(
+            "load",
+            function() {
+              setTimeout(
+                function(){
+                  $('#chatFrame').show();
+                  $('#chatFrame').removeAttr('style');
+                },
+                3000
+              );
+            }
+          )
+    }
+  </script>
+
+  <!-- <script src="/static/js/modules/lazyLoad.js"></script> -->
+
+
+
+</body>
+</html>

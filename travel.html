@@ -1,0 +1,693 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <!-- Required meta tags -->
+    <meta charset="utf-8"/>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    
+    <script type="text/javascript">
+      var auth0_domain = "chil.us.auth0.com";
+      var auth0_client_id = "idrCis50v8uMru0k189CZY3LXVK9tUnY";
+    </script>
+    <script src="https://cdn.auth0.com/js/auth0-spa-js/1.7/auth0-spa-js.production.js"></script>
+    <script type="text/javascript" src="/static/js/modules/auth0protect.js"></script>
+    
+
+    <link rel="icon" type="image/png" href="/static/images/favicon.png">
+
+    <!-- External CSS -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha256-93wNFzm2GO3EoByj9rKZCwGjAJAwr0nujPaOgwUt8ZQ="
+          crossorigin="anonymous"/>
+
+    <!-- External Fonts (no google for china) -->
+    <link rel="stylesheet" href="/static/css/main.css"/>
+    <!-- <link rel="stylesheet" href="/static/css/fa_regular.css"/> -->
+    <link rel="stylesheet" href="/static/css/fa_solid.css"/>
+    <link rel="stylesheet" href="/static/css/lazy_load.css"/>
+    <link rel="stylesheet" href="/static/css/typeahead.css"/>
+
+    <title>CHIL
+      
+        : Plan Your Trip
+      
+    </title>
+  
+</head>
+
+<body>
+<!-- NAV -->
+
+  
+
+  
+
+
+  
+
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light mr-auto btco-hover-menu" id="main-nav">
+    <div class="container">
+        
+        
+          <a class="navbar-brand" href="/index.html">CHIL 2024</a>
+        
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+              class="collapse navbar-collapse flex-grow-1"
+              id="navbarNav"
+        >
+          <ul class="navbar-nav ml-auto">
+              
+              <li class="nav-item ">
+                  <a class="nav-link" href="/index.html">Home</a>
+              </li>
+              
+              <li class="nav-item ">
+                  <a class="nav-link" href="/speakers.html">Speaker Bios</a>
+              </li>
+              
+              <li class="nav-item ">
+                  <a class="nav-link" href="/calendar.html">Program</a>
+              </li>
+              
+              <li class="nav-item ">
+                  <a class="nav-link" href="/proceedings.html">Papers</a>
+              </li>
+              
+
+              
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="attendDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Attend
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="attendDropdown">
+                  <!-- <li><a class="dropdown-item" href="https://forms.gle/ytAhSYkgfyWMH3Ca9">Pre-registration</a> -->
+                    
+                      <a class="dropdown-item" href="/travel.html">Plan Your Trip</a>
+                    
+                  </li>
+                </ul>
+              </li>
+              
+
+              
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="submitDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Submit
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="submitDropdown">
+                  
+                  <li>
+                      <a class="dropdown-item" href="/call-for-papers.html">Call for Papers</a>
+                  </li>
+                  
+                  <li>
+                      <a class="dropdown-item" href="/call-for-doctoral.html">Call for Doctoral Symposium</a>
+                  </li>
+                  
+                </ul>
+              </li>
+              
+
+              
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="organizationDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Organization
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="organizationDropdown">
+                  
+                  <li>
+                      <a class="dropdown-item" href="/committee.html">Committee</a>
+                  </li>
+                  
+                  <li>
+                      <a class="dropdown-item" href="/sponsor.html">Sponsorship</a>
+                  </li>
+                  
+                  <li>
+                      <a class="dropdown-item" href="/acknowledgements.html">Reviewer Acknowledgements</a>
+                  </li>
+                  
+                  <li>
+                      <a class="dropdown-item" href="/codeconduct.html">Code of Conduct</a>
+                  </li>
+                  
+                  <li>
+                      <a class="dropdown-item" href="/communityguidelines.html">Community Guidelines</a>
+                  </li>
+                  
+                </ul>
+              </li>
+              
+              
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Past Events
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  
+                  <li>
+                      <a class="dropdown-item dropdown-toggle" href="#" id="navYear2023Dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">2023</a>
+                      <ul class="dropdown-menu" aria-labelledby="navYear2023Dropdown">
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                              
+                              <li><a class="dropdown-item" href="/2023/highlights.html">Highlights</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2023/proceedings.html">Proceedings</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2023/speakers.html">Speakers</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2023/invited.html">Invited</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2023/panels.html">Panels</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2023/debates.html">Debates</a></li>
+                              
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                      </ul>
+                  </li>
+                  
+                  <li>
+                      <a class="dropdown-item dropdown-toggle" href="#" id="navYear2022Dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">2022</a>
+                      <ul class="dropdown-menu" aria-labelledby="navYear2022Dropdown">
+                          
+                            
+                          
+                            
+                          
+                            
+                              
+                              <li><a class="dropdown-item" href="/2022/highlights.html">Highlights</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2022/proceedings.html">Proceedings</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2022/speakers.html">Speakers</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2022/tutorials.html">Tutorials</a></li>
+                              
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                      </ul>
+                  </li>
+                  
+                  <li>
+                      <a class="dropdown-item dropdown-toggle" href="#" id="navYear2021Dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">2021</a>
+                      <ul class="dropdown-menu" aria-labelledby="navYear2021Dropdown">
+                          
+                            
+                          
+                            
+                              
+                              <li><a class="dropdown-item" href="/2021/highlights.html">Highlights</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2021/proceedings.html">Proceedings</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2021/speakers.html">Speakers</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2021/tutorials.html">Tutorials</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2021/workshops.html">Workshops</a></li>
+                              
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                      </ul>
+                  </li>
+                  
+                  <li>
+                      <a class="dropdown-item dropdown-toggle" href="#" id="navYear2020Dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">2020</a>
+                      <ul class="dropdown-menu" aria-labelledby="navYear2020Dropdown">
+                          
+                            
+                              
+                              <li><a class="dropdown-item" href="/2020/highlights.html">Highlights</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2020/proceedings.html">Proceedings</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2020/speakers.html">Speakers</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2020/tutorials.html">Tutorials</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2020/workshops.html">Workshops</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2020/symposiums.html">Symposiums</a></li>
+                              
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                      </ul>
+                  </li>
+                  
+                </ul>
+              </li>
+              
+          </ul>
+        </div>
+    </div>
+  </nav>
+
+
+
+  <!-- User Overrides -->
+  
+
+
+  <div class="container content-wrapper">
+      <!-- Tabs -->
+      <div class="tabs">
+          
+
+      </div>
+      <!-- Content -->
+      <div class="content">
+          
+
+  <div class="page-content">
+    <h2>Plan Your Trip</h2>
+<p><strong>Dates:</strong></p>
+<p>Thursday, June 27th - Friday, June 28th, 2024</p>
+<p><strong>Location:</strong></p>
+<p>CHIL 2024 will be held at <strong>Cornell Tech </strong>located at <a href="https://test-cornell-tech.pantheonsite.io/wp-content/uploads/2023/06/Campus-Map-2023.pdf">2 West Loop Rd, New York, NY 10044</a>. </p>
+<div class="image-container">
+    <div class="image-wrapper first-image-wrapper">
+        <img src="static/images/attend/travel_2024_image1.png" class="custom-img" alt="Roosevelt Island Transit Overview"/>
+        <p>Full Subway Map: <a href="https://new.mta.info/map/5256" target="_blank">New York City Subway</a></p>
+    </div>
+
+    <div class="image-wrapper">
+        <img src="static/images/attend/travel_2024_image3.png" class="custom-img" alt="Roosevelt Island Points of Interest"/>
+    </div>
+</div>
+
+<p><br /></p>
+<h2>ACCOMMODATION</h2>
+<p>We have negotiated a room block for attendees at the <strong>Graduate Hotel</strong> for a discounted rate. The hotel is conveniently located at 22 N Loop Rd, New York, NY 10044, a 1-minute walk from the Verizon Center. </p>
+<p>A number of rooms are being offered at this rate on a first come first serve basis until <strong>Monday, May 20th</strong>, after which room rates are subject to change. Please use one of two methods to book a room: </p>
+<ol>
+<li>Use this <a href="https://www.graduatehotels.com/new-york/#/booking/step-1?group=9165688">weblink</a> to book on the hotel website. </li>
+<li>Call the hotel at (929) 447-4700 to book with the group number 9165688 for the CHIL conference room block. </li>
+</ol>
+<p>Other local accommodation:</p>
+<ul>
+<li>Ravel Hotel (Queens) </li>
+<li>AKA Sutton Place (Manhattan) </li>
+<li>Blue Angel Hotel (Manhattan) </li>
+<li>Ameritania Hotel at Times Square (Manhattan) </li>
+</ul>
+<p>***NOTE: Travel time may be more than 20 minutes due to NYC rush hour and subway schedule delays or changes. Please plan accordingly***</p>
+<p><br /></p>
+<h2>GETTING TO THE VENUE</h2>
+<p><strong>By Subway</strong></p>
+<p>Take the F train to the Roosevelt Island stop. Walk south 0.3 miles on W Road.</p>
+<p><strong>By Tram </strong>(nice views during sunset!)</p>
+<p>Catch the Tram at 59th street and 2nd Avenue. Campus is just south of the Queensboro bridge station.</p>
+<p><strong>By Ferry</strong></p>
+<p>The Astoria route of NYC Ferry will connect you to a landing just east of campus. Here’s the latest <a href="https://www.ferry.nyc/routes-and-schedules/route/astoria/">route and schedule</a>.</p>
+<p><strong>By Bike</strong></p>
+<p>Access Roosevelt Island by bike via the Roosevelt Island Bridge from 36th Street in Queens, then ride south on Main Street.</p>
+<p><strong>By Bus</strong></p>
+<p>The Q102 bus connects Roosevelt Island to Long Island City and Astoria in Queens. Here’s the <a href="https://bustime.mta.info/m/?q=Q102">latest route Q102 map and schedule.</a></p>
+<p><strong>By Car</strong></p>
+<p>Access Roosevelt Island by car via the Roosevelt Island Bridge from 36th Street in Queens, then drive south down Main Street.</p>
+<p><strong>From New York Airports</strong></p>
+<p>From LGA:</p>
+<ol>
+<li>From Laguardia Airport, take the M60-SBS (Bus) in the Broadway-106 St direction to Hoyt Av/31 St. </li>
+<li>Walk to the NW Subway station at Astoria Blvd and take the W (Subway) in the Whitehall St-South Ferry direction to Queensboro Plaza. </li>
+<li>Walk North to 41st Ave and then walk West to the F Subway Station at 21 St-Queensbridge.</li>
+<li>Take the F (Subway) in the Lexington Av/63 St direction to Roosevelt Island.</li>
+<li>Walk South on Roosevelt Island and arrive at Verizon Executive Education Center.</li>
+</ol>
+<p>From JFK:</p>
+<ol>
+<li>From JFK Airport, take the AirTrain JFK Red (Train) in the Jamaica Station direction to Jamaica Station. </li>
+<li>Walk to the E Subway station at Sutphin Blvd-Archer Av-JFK Airport and take the E (Subway) in the World Trade Center direction to Court Sq-23 St. </li>
+<li>Walk North to 41st Ave and then walk West to the F Subway Station at 21 St-Queensbridge.</li>
+<li>Take the F (Subway) in the Lexington Av/63 St direction to Roosevelt Island.</li>
+<li>Walk South on Roosevelt Island and arrive at Verizon Executive Education Center.</li>
+</ol>
+<p>From EWR:</p>
+<ol>
+<li>From Newark Airport, take the 62 (Bus) in the Newark Penn Station direction to Newark Penn Station. </li>
+<li>At Newark Penn Station, take the 108 (Bus) in the New York Via Union City direction to Port Authority Bus Terminal. </li>
+<li>Walk East to Broadway to the NQRW Subway Station at Times Sq - 42 St.</li>
+<li>Take the Q (Subway) in the 96 St direction to Lexington Av/63 St.</li>
+<li>Transfer at Lexington Av/63 St to the F (Subway) in the 21 St-Queensbridge direction to Roosevelt Island.</li>
+<li>Walk South on Roosevelt Island and arrive at Verizon Executive Education Center.</li>
+</ol>
+<p><br /></p>
+<h2>FOOD</h2>
+<p>Coffee and lunch will be provided during conference days. Additional nearby breakfast and/or lunch spots include: </p>
+<p>On Roosevelt Island (By walking):</p>
+<ul>
+<li>Soups, pasta, sandwiches, breakfast with vegan/vegetarian options (2 minute walk): <a href="https://maps.app.goo.gl/7q58L1h3W8VMJgHm6">Anything At All</a></li>
+<li>Irish and American with vegetarian options (6 minute walk): <a href="https://maps.app.goo.gl/uNSm4SmTYsJrKkrR6">Granny Annie's Bar &amp; Kitchen</a></li>
+<li>Italian pasta and pizza (7 minute walk): <a href="https://maps.app.goo.gl/bD1VyD8Tg4L6jevx5">Piccolo Trattoria Ristorante Pizzeria</a> </li>
+<li>Grocery store for everyday items (11 minute walk): <a href="https://maps.app.goo.gl/ygCzA6zPqF3r3qrY8">Wholesome Factory</a> </li>
+</ul>
+<p>In Manhattan (using Subway):</p>
+<ul>
+<li>Kosher + Vegetarian options: <a href="https://www.google.com/maps/place/Abaita+-+Kosher+Dairy/@40.7557,-73.9720694,16z/data=!3m1!4b1!4m6!3m5!1s0x89c258fd278f6211:0x847b53f5c50e87a0!8m2!3d40.7557!4d-73.9720694!16s%2Fg%2F11hbqlx36l?entry=ttu">Abaita - Kosher Dairy</a></li>
+<li>Halal food cart locations: <a href="https://www.google.com/maps/place/4+Guys+Halal+Food/@40.757962,-73.9708356,17z/data=!3m1!4b1!4m6!3m5!1s0x89c2591b84c016c9:0x1238ce1ecb1db7f!8m2!3d40.757962!4d-73.9708356!16s%2Fg%2F11fhl4hzr_?entry=ttu">4 Guys Halal Food</a> , <a href="https://www.google.com/maps?q=Empire+Halal,+1107+3rd+Ave,+New+York,+NY+10065&amp;ftid=0x89c258e91926aaab:0x975f307ea5093946&amp;entry=gps&amp;lucs=,94224825,94227247,94227248,47071704,47069508,94218641,94203019,47084304,94208458,94208447&amp;g_ep=CAISDTYuMTIxLjEuNjg0ODAYACCs3wEqWiw5NDIyNDgyNSw5NDIyNzI0Nyw5NDIyNzI0OCw0NzA3MTcwNCw0NzA2OTUwOCw5NDIxODY0MSw5NDIwMzAxOSw0NzA4NDMwNCw5NDIwODQ1OCw5NDIwODQ0N0ICVVM%3D">Empire Halal</a> , <a href="https://www.google.com/maps?q=The+Twins+Halal+Food,+York+Avenue+%26,+E+67th+St,+New+York,+NY+10065&amp;ftid=0x89c2598d9cf1b335:0x52831199fa8d399c&amp;entry=gps&amp;lucs=,94224825,94227247,94227248,47071704,47069508,94218641,94203019,47084304,94208458,94208447&amp;g_ep=CAISDTYuMTIxLjEuNjg0ODAYACCenQoqWiw5NDIyNDgyNSw5NDIyNzI0Nyw5NDIyNzI0OCw0NzA3MTcwNCw0NzA2OTUwOCw5NDIxODY0MSw5NDIwMzAxOSw0NzA4NDMwNCw5NDIwODQ1OCw5NDIwODQ0N0ICVVM%3D">The Twins Halal Food</a></li>
+</ul>
+<p><br /></p>
+<h2>LOCAL POINTS OF INTEREST</h2>
+<p><span style="text-decoration:underline;">On Roosevelt Island:</span></p>
+<ul>
+<li>Roosevelt Island Tramway, East 59th Street and 2nd Avenue, Manhattan</li>
+<li>Franklin D. Roosevelt Four Freedoms State Park, Southern tip of Roosevelt Island</li>
+<li>Smallpox Hospital (“Renwick Ruins”), Southpoint Park</li>
+<li>The Strecker Laboratory, Southpoint Park</li>
+</ul>
+<p><span style="text-decoration:underline;">In Manhattan:</span></p>
+<ul>
+<li>One World Trade Center: https://www.oneworldobservatory.com</li>
+<li>The Edge: https://www.edgenyc.com/en</li>
+<li>MOMA: <a href="https://www.moma.org">https://www.moma.org</a></li>
+<li>The Met: https://www.metmuseum.org</li>
+<li>American Museum of Natural History: https://www.amnh.org</li>
+</ul>
+  </div>
+
+      </div>
+  </div>
+
+
+
+  <!-- Sponsors -->
+  
+    <div class="container">
+      <br />
+      <h3>CHIL Sponsors</h3>
+      <p>Thank you to our 2024 sponsors: Gordon and Betty Moore Foundation (Gold), Department of Health Outcomes and Biomedical Informatics at UFlorida College of Medicine (Gold), Apple (Silver), Genentech (Silver), Google (Silver), The Mount Sinai Hospital (Silver), Computational Precision Health Program at UCSF / UC Berkeley (Silver), UF Health (Silver), Chase Center at University of Pennsylvania (Silver), Department of Biostatistics at University of Pennsylvania (Silver), Department of Biostatistics at Columbia University (Bronze), Health Data Science (Bronze), and the Department of Surgery at University of Minnesota (Bronze)!</p>
+      <div class="row sponsors">
+  
+    <div class="col-md-6 col-xs-6 mx-auto">
+      <div class="pp-card sponsor gold">
+        <div class="pp-card-header" class="text-muted">
+          <img src="static/images/sponsors/moore-logo.jpg" class="rounded gold" alt="Gordon and Betty Moore Foundation" />
+          <a href="" class="stretched-link"></a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col-md-6 col-xs-6 mx-auto">
+      <div class="pp-card sponsor gold">
+        <div class="pp-card-header" class="text-muted">
+          <img src="static/images/sponsors/CTSI-logo.png" class="rounded gold" alt="UFlorida CTSI Department of Biomedical Informatics" />
+          <a href="" class="stretched-link"></a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col-md-3 col-xs-6 mx-auto">
+      <div class="pp-card sponsor silver">
+        <div class="pp-card-header" class="text-muted">
+          <img src="static/images/sponsors/apple-logo.jpg" class="rounded silver" alt="Apple" />
+          <a href="" class="stretched-link"></a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col-md-3 col-xs-6 mx-auto">
+      <div class="pp-card sponsor silver">
+        <div class="pp-card-header" class="text-muted">
+          <img src="static/images/sponsors/genentech-logo.png" class="rounded silver" alt="Genentech" />
+          <a href="https://www.gene.com/scientists/our-scientists/prescient-design" class="stretched-link"></a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col-md-3 col-xs-6 mx-auto">
+      <div class="pp-card sponsor silver">
+        <div class="pp-card-header" class="text-muted">
+          <img src="static/images/sponsors/google-logo.png" class="rounded silver" alt="Google" />
+          <a href="https://health.google/health-research/" class="stretched-link"></a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col-md-3 col-xs-6 mx-auto">
+      <div class="pp-card sponsor silver">
+        <div class="pp-card-header" class="text-muted">
+          <img src="static/images/sponsors/mount-sinai.png" class="rounded silver" alt="The Mount Sinai Hospital" />
+          <a href="" class="stretched-link"></a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col-md-3 col-xs-6 mx-auto">
+      <div class="pp-card sponsor silver">
+        <div class="pp-card-header" class="text-muted">
+          <img src="static/images/sponsors/CPH_UCSF_logo.png" class="rounded silver" alt="Computational Precision Health Program at UCSF / UC Berkeley" />
+          <a href="" class="stretched-link"></a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col-md-3 col-xs-6 mx-auto">
+      <div class="pp-card sponsor silver">
+        <div class="pp-card-header" class="text-muted">
+          <img src="static/images/sponsors/uflorida-health.gif" class="rounded silver" alt="University of Florida Health" />
+          <a href="" class="stretched-link"></a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col-md-3 col-xs-6 mx-auto">
+      <div class="pp-card sponsor silver">
+        <div class="pp-card-header" class="text-muted">
+          <img src=" static/images/sponsors/UPenn-Chase-Center-logo.png" class="rounded silver" alt="Chase Center at University of Pennsylvania" />
+          <a href="https://chase.med.upenn.edu/" class="stretched-link"></a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col-md-3 col-xs-6 mx-auto">
+      <div class="pp-card sponsor bronze">
+        <div class="pp-card-header" class="text-muted">
+          <img src="static/images/sponsors/Columbia-logo.png" class="rounded bronze" alt="Columbia University (Biostats Dept.)" />
+          <a href="" class="stretched-link"></a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col-md-3 col-xs-6 mx-auto">
+      <div class="pp-card sponsor bronze">
+        <div class="pp-card-header" class="text-muted">
+          <img src="static/images/sponsors/Health-Data-Science-logo.jpg" class="rounded bronze" alt="Health Data Science" />
+          <a href="" class="stretched-link"></a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col-md-3 col-xs-6 mx-auto">
+      <div class="pp-card sponsor bronze">
+        <div class="pp-card-header" class="text-muted">
+          <img src="static/images/sponsors/UMinn_CHS_logo.png" class="rounded bronze" alt="Department of Surgery at University of Minnesota" />
+          <a href="https://med.umn.edu/surgery/divisions/computational-health-sciences" class="stretched-link"></a>
+        </div>
+      </div>
+    </div>
+  
+</div>
+    </div>
+  
+
+
+
+  <!-- Footer -->
+  <footer class="footer bg-light p-4">
+    <div class="container">
+        <p class="float-right"><a href="#">Back to Top</a></p>
+        <p class="text-left">© 2024 CHIL Organization Committee</p>
+    </div>
+  </footer>
+
+
+
+  <!-- External Javascript libs_ext  -->
+  <script src="https://cdn.jsdelivr.net/npm/d3@5/dist/d3.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.3/dist/handlebars.min.js"
+          integrity="sha256-/PJBs6QWvXijOFIX04kZpLb6ZtSQckdOIavLWKKOgXU="
+          crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"
+          integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+          crossorigin="anonymous"></script>
+
+  <script
+          src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+          integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+          crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+          integrity="sha256-2JaAhvdQnfNMMnhWPauHOZ2k+dzftBmBjjownu3HC4g="
+          crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/min/moment.min.js"
+          integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ="
+          crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/moment-timezone@0.5.28/builds/moment-timezone-with-data.min.js"
+          integrity="sha256-IWYg4uIC8/erItNXYvLtyYHioRi2zT1TFva8qaAU/ww="
+          crossorigin="anonymous"></script>
+
+  <!-- Library libs_ext -->
+  <script type="text/javascript" src="/static/js/libs_ext/typeahead.bundle.js"></script>
+
+  <!--    Internal Libs -->
+  <script type="text/javascript" src="/static/js/data/api.js"></script>
+
+  <!-- Google Analytics -->
+  <script
+          async
+          type="text/javascript"
+          src="https://www.googletagmanager.com/gtag/js?id=UA-"></script>
+
+  <script type="text/javascript">
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag("js", new Date());
+    gtag("config", "UA-");
+  </script>
+
+  <!-- Code for hash tags -->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      if (window.location.hash !== "") {
+        $(`a[href="${window.location.hash}"]`).tab("show");
+      }
+
+      $("a[data-toggle='tab']").on("shown.bs.tab", function (e) {
+        const hash = $(e.target).attr("href");
+        if (hash.substr(0, 1) === "#") {
+          const position = $(window).scrollTop();
+          window.location.replace(`#${hash.substr(1)}`);
+          $(window).scrollTop(position);
+        }
+      });
+
+      // Nested dropdown navigation menu
+      var ddHoverOrClick = function (e) {
+        var $el = $(this);
+        var $parent = $(this).offsetParent('.dropdown-menu');
+
+        if (!$(this).next().hasClass('show')) {
+            $(this).parents('.dropdown-menu').first().find('.show').removeClass('show');
+        }
+
+        var $subMenu = $(this).next('.dropdown-menu');
+        $subMenu.toggleClass('show');
+
+        $(this).parent('li').toggleClass('show');
+
+        $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function (e) {
+            $('.dropdown-menu .show').removeClass('show');
+        });
+
+         if (!$parent.parent().hasClass('navbar-nav')) {
+            $el.next().css({
+              "top": $el[0].offsetTop,
+              "left": -$parent.outerWidth()
+            });
+        }
+
+        return false;
+      };
+
+      $('.dropdown-menu a.dropdown-toggle').click(ddHoverOrClick).hover(ddHoverOrClick).on('touchstart', ddHoverOrClick);
+    });
+  </script>
+
+  <!-- Prevent focus from jumping to embedded rocket.chat with an iframe id="chatFrame" -->
+  <script type="text/javascript">
+    if ($("#chatFrame").length > 0) {
+          $("#chatFrame").hide();
+          $("#chatFrame").on(
+            "load",
+            function() {
+              setTimeout(
+                function(){
+                  $('#chatFrame').show();
+                  $('#chatFrame').removeAttr('style');
+                },
+                3000
+              );
+            }
+          )
+    }
+  </script>
+
+  <!-- <script src="/static/js/modules/lazyLoad.js"></script> -->
+
+
+
+</body>
+</html>

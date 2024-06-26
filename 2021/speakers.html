@@ -1,0 +1,715 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <!-- Required meta tags -->
+    <meta charset="utf-8"/>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    
+    <script type="text/javascript">
+      var auth0_domain = "chil.us.auth0.com";
+      var auth0_client_id = "idrCis50v8uMru0k189CZY3LXVK9tUnY";
+    </script>
+    <script src="https://cdn.auth0.com/js/auth0-spa-js/1.7/auth0-spa-js.production.js"></script>
+    <script type="text/javascript" src="/static/js/modules/auth0protect.js"></script>
+    
+
+    <link rel="icon" type="image/png" href="/static/images/favicon.png">
+
+    <!-- External CSS -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha256-93wNFzm2GO3EoByj9rKZCwGjAJAwr0nujPaOgwUt8ZQ="
+          crossorigin="anonymous"/>
+
+    <!-- External Fonts (no google for china) -->
+    <link rel="stylesheet" href="/static/css/main.css"/>
+    <!-- <link rel="stylesheet" href="/static/css/fa_regular.css"/> -->
+    <link rel="stylesheet" href="/static/css/fa_solid.css"/>
+    <link rel="stylesheet" href="/static/css/lazy_load.css"/>
+    <link rel="stylesheet" href="/static/css/typeahead.css"/>
+
+    <title>CHIL
+      
+        : Past Events - Keynotes
+      
+    </title>
+  
+</head>
+
+<body>
+<!-- NAV -->
+
+  
+
+  
+
+
+  
+
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light mr-auto btco-hover-menu" id="main-nav">
+    <div class="container">
+        
+        
+          <a class="navbar-brand" href="/index.html">CHIL 2024</a>
+        
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+              class="collapse navbar-collapse flex-grow-1"
+              id="navbarNav"
+        >
+          <ul class="navbar-nav ml-auto">
+              
+              <li class="nav-item ">
+                  <a class="nav-link" href="/index.html">Home</a>
+              </li>
+              
+              <li class="nav-item ">
+                  <a class="nav-link" href="/speakers.html">Speaker Bios</a>
+              </li>
+              
+              <li class="nav-item ">
+                  <a class="nav-link" href="/calendar.html">Program</a>
+              </li>
+              
+              <li class="nav-item ">
+                  <a class="nav-link" href="/proceedings.html">Papers</a>
+              </li>
+              
+
+              
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="attendDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Attend
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="attendDropdown">
+                  <!-- <li><a class="dropdown-item" href="https://forms.gle/ytAhSYkgfyWMH3Ca9">Pre-registration</a> -->
+                    
+                      <a class="dropdown-item" href="/travel.html">Plan Your Trip</a>
+                    
+                  </li>
+                </ul>
+              </li>
+              
+
+              
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="submitDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Submit
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="submitDropdown">
+                  
+                  <li>
+                      <a class="dropdown-item" href="/call-for-papers.html">Call for Papers</a>
+                  </li>
+                  
+                  <li>
+                      <a class="dropdown-item" href="/call-for-doctoral.html">Call for Doctoral Symposium</a>
+                  </li>
+                  
+                </ul>
+              </li>
+              
+
+              
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="organizationDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Organization
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="organizationDropdown">
+                  
+                  <li>
+                      <a class="dropdown-item" href="/committee.html">Committee</a>
+                  </li>
+                  
+                  <li>
+                      <a class="dropdown-item" href="/sponsor.html">Sponsorship</a>
+                  </li>
+                  
+                  <li>
+                      <a class="dropdown-item" href="/acknowledgements.html">Reviewer Acknowledgements</a>
+                  </li>
+                  
+                  <li>
+                      <a class="dropdown-item" href="/codeconduct.html">Code of Conduct</a>
+                  </li>
+                  
+                  <li>
+                      <a class="dropdown-item" href="/communityguidelines.html">Community Guidelines</a>
+                  </li>
+                  
+                </ul>
+              </li>
+              
+              
+              <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Past Events
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  
+                  <li>
+                      <a class="dropdown-item dropdown-toggle" href="#" id="navYear2023Dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">2023</a>
+                      <ul class="dropdown-menu" aria-labelledby="navYear2023Dropdown">
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                              
+                              <li><a class="dropdown-item" href="/2023/highlights.html">Highlights</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2023/proceedings.html">Proceedings</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2023/speakers.html">Speakers</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2023/invited.html">Invited</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2023/panels.html">Panels</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2023/debates.html">Debates</a></li>
+                              
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                      </ul>
+                  </li>
+                  
+                  <li>
+                      <a class="dropdown-item dropdown-toggle" href="#" id="navYear2022Dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">2022</a>
+                      <ul class="dropdown-menu" aria-labelledby="navYear2022Dropdown">
+                          
+                            
+                          
+                            
+                          
+                            
+                              
+                              <li><a class="dropdown-item" href="/2022/highlights.html">Highlights</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2022/proceedings.html">Proceedings</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2022/speakers.html">Speakers</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2022/tutorials.html">Tutorials</a></li>
+                              
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                      </ul>
+                  </li>
+                  
+                  <li>
+                      <a class="dropdown-item dropdown-toggle" href="#" id="navYear2021Dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">2021</a>
+                      <ul class="dropdown-menu" aria-labelledby="navYear2021Dropdown">
+                          
+                            
+                          
+                            
+                              
+                              <li><a class="dropdown-item" href="/2021/highlights.html">Highlights</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2021/proceedings.html">Proceedings</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2021/speakers.html">Speakers</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2021/tutorials.html">Tutorials</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2021/workshops.html">Workshops</a></li>
+                              
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                      </ul>
+                  </li>
+                  
+                  <li>
+                      <a class="dropdown-item dropdown-toggle" href="#" id="navYear2020Dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">2020</a>
+                      <ul class="dropdown-menu" aria-labelledby="navYear2020Dropdown">
+                          
+                            
+                              
+                              <li><a class="dropdown-item" href="/2020/highlights.html">Highlights</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2020/proceedings.html">Proceedings</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2020/speakers.html">Speakers</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2020/tutorials.html">Tutorials</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2020/workshops.html">Workshops</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2020/symposiums.html">Symposiums</a></li>
+                              
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                      </ul>
+                  </li>
+                  
+                </ul>
+              </li>
+              
+          </ul>
+        </div>
+    </div>
+  </nav>
+
+
+
+  <!-- User Overrides -->
+  
+  
+
+  <div class="container content-wrapper">
+      <!-- Tabs -->
+      <div class="tabs">
+           
+      </div>
+      <!-- Content -->
+      <div class="content">
+          
+  <div class="page-header text-center">
+    <h1>Keynotes from ACM CHIL 2021</h1>
+  </div>
+  <div class="page-content">
+    <!-- Speakers -->
+    
+      
+<div class="row p-4" id='21K01'>
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header">
+        <div class="row">
+          <div class="col-md-2 col-sm-5">
+            <img src="/static/images/speakers/r-barzilay.jpg" width="100%" class="img-thumbnail" alt="Regina Barzilay" />
+          </div>
+          <div class="col-md-10 col-sm-6">
+            <div class="m-3 text-muted">
+              <h3>
+                  AI for Drug Discovery: Challenges and Opportunities
+                </a>
+              </h3>
+            </div>
+            <div class="m-3 text-muted">
+              <span class="card-title h3">
+                Regina Barzilay  / MIT Computer Science &amp; Artificial Intelligence Lab 
+              </span>
+            </div>
+            <div class="m-3 text-muted">
+              <span class="card-title h3">
+                <a href="https://www.regina.csail.mit.edu" target="_blank" rel="noopener">https://www.regina.csail.mit.edu</a>
+              </span>
+            </div>
+            <div class="m-3">
+              
+                <p> Abstract: Until today, all the available therapeutics are designed by human experts, with no help from AI tools. This reliance on human knowledge and dependence on large-scale experimentations result in prohibitive development cost and high failure rate. Recent developments in machine learning algorithms for molecular modeling aim to transform this field. In my talk, I will present state-of-the-art approaches for property prediction and de-novo molecular generation, describing their use in drug design. In addition, I will highlight unsolved algorithmic questions in this field, including confidence estimation, pretraining, and deficiencies in learned molecular representations. </p>
+              
+              
+                <p> Bio: Regina Barzilay is a professor in the Department of Electrical Engineering and Computer Science and a member of the Computer Science and Artificial Intelligence Laboratory at the Massachusetts Institute of Technology. She is an AI faculty lead for Jameel Clinic, an MIT center for Machine Learning in Health at MIT. Her research interests are in natural language processing, applications of deep learning to chemistry and oncology. She is a recipient of various awards including the NSF Career Award, the MIT Technology Review TR-35 Award, Microsoft Faculty Fellowship and several Best Paper Awards at NAACL and ACL. In 2017, she received a MacArthur fellowship, an ACL fellowship and an AAAI fellowship. In 2020, she was awarded AAAI Squirrel Award for Artificial Intelligence for the Benefit of Humanity. She received her Ph.D. in Computer Science from Columbia University, and spent a year as a postdoc at Cornell University. Regina received her undergraduate from Ben Gurion University of the Negev, Israel. </p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row p-4" id='21K02'>
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header">
+        <div class="row">
+          <div class="col-md-2 col-sm-5">
+            <img src="/static/images/speakers/n-razavian.jpg" width="100%" class="img-thumbnail" alt="Narges Razavian" />
+          </div>
+          <div class="col-md-10 col-sm-6">
+            <div class="m-3 text-muted">
+              <h3>
+                  Machine Learning in Healthcare: From Modeling to Clinical Impact
+                </a>
+              </h3>
+            </div>
+            <div class="m-3 text-muted">
+              <span class="card-title h3">
+                Narges Razavian  / New York University Langone Medical Center 
+              </span>
+            </div>
+            <div class="m-3 text-muted">
+              <span class="card-title h3">
+                <a href="http://razavian.net/" target="_blank" rel="noopener">http://razavian.net/</a>
+              </span>
+            </div>
+            <div class="m-3">
+              
+                <p> Abstract: Improved healthcare delivery and patient outcomes are the ultimate goals of many AI applications in healthcare. However, relatively few machine learning models have been translated to clinical practice so far and among those even fewer have undergone a randomized control trial (RCT) to assess their impact. This talk will highlight aspects of the clinical translational process, beyond retrospective modeling, that impact design, development, validation, and regulation of machine learning models in healthcare. In particular, this talk focuses on our recent study of predicting favorable outcomes in hospitalized COVID-19 patients. The resulting model, which was deployed and prospectively validated at NYU Langone, underwent an RCT, and was eventually shared with other institutions. I will discuss challenges around integrating our model in the EHR system and their implications, the efficacy and safety results of our RCT, and practical insights about sharing models across clinics. We will end the talk by reviewing results of a survey of over 195 clinical users who interacted with this model, summarizing when and how the model was most helpful. </p>
+              
+              
+                <p> Bio: Narges Razavian is an assistant professor at NYU Langone Health, Center for Healthcare Innovation and Delivery Sciences, and Predictive Analytics Unit. Her lab focuses on various applications of Machine Learning and AI for medicine with a clinical translation outlook, and they work with Medical Images, Clinical Notes, and Electronic Health Records. Before NYU Langone, she was a postdoc at CILVR lab at NYU Courant CS department. She received her PhD at CMU Computational Biology group. </p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row p-4" id='21K03'>
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header">
+        <div class="row">
+          <div class="col-md-2 col-sm-5">
+            <img src="/static/images/speakers/m-sendak.jpg" width="100%" class="img-thumbnail" alt="Mark Sendak" />
+          </div>
+          <div class="col-md-10 col-sm-6">
+            <div class="m-3 text-muted">
+              <h3>
+                  Holding a Hammer When There are no Nails - Rapid Iteration to Build COVID-19 Support Programs for Historically Marginalized Communities
+                </a>
+              </h3>
+            </div>
+            <div class="m-3 text-muted">
+              <span class="card-title h3">
+                Mark Sendak  / Duke Institute for Health Innovation 
+              </span>
+            </div>
+            <div class="m-3 text-muted">
+              <span class="card-title h3">
+                <a href="https://dihi.org/team-member/mark-sendak-md/" target="_blank" rel="noopener">https://dihi.org/team-member/mark-sendak-md/</a>
+              </span>
+            </div>
+            <div class="m-3">
+              
+                <p> Abstract: In early March 2020, Mark joined an interdisciplinary team to launch the Pandemic Response Network. Over the subsequent months, he helped build and launch programs to support health workers, university students and staff, small businesses, K-12 public schools, and historically marginalized communities through the COVID-19 pandemic. With a strong background in design and implementation of high-tech health innovations, Mark worked alongside public health practitioners and community leaders to repeatedly execute the last mile implementation of critical COVID-19 programs, including symptom monitoring in the workplace, rapid antigen testing in schools, and pop-up vaccination events in churches. The portfolio of programs rapidly shifted health care capabilities and expertise out of hospitals and clinics into community settings that were poorly supported by existing public health infrastructure. The experience forced Mark and his team to approach technology design with a new set of assumptions and led to the development of completely novel data streams and technology systems. In his talk, Mark distills insights and learnings from the front lines of the COVID-19 response and highlights important implications and opportunities for the field of machine learning and artificial intelligence in health care. </p>
+              
+              
+                <p> Bio: Mark Sendak, MD, MPP is the Population Health & Data Science Lead at the Duke Institute for Health Innovation (DIHI), where he leads interdisciplinary teams of data scientists, clinicians, and machine learning experts to build technologies that solve real clinical problems. He has built tools to support Duke Health's Accountable Care Organization, COVID-19 Pandemic Response Network, and hospital network. Together with his team, he has integrated dozens of data-driven technologies into clinical operations and is a co-inventor of software to scale machine learning applications. He leads the DIHI Clinical Research & Innovation scholarship, which equips medical students with the business and data science skills required to lead health care innovation efforts. His work has been published in technical venues such as the Machine Learning for Healthcare Proceedings and Fairness, Accountability, and Transparency in Machine Learning Proceedings and clinical journals such as Plos Medicine, Nature Medicine and JAMA Open. He has served as an expert advisor to the American Medical Association, AARP, and National Academies of Medicine on matters related to machine learning, innovation, and policy. He obtained his MD and Masters of Public Policy at Duke University as a Dean's Tuition Scholar and his Bachelor's of Science in Mathematics from UCLA. </p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row p-4" id='21K04'>
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header">
+        <div class="row">
+          <div class="col-md-2 col-sm-5">
+            <img src="/static/images/speakers/a-karthikesalingam.jpg" width="100%" class="img-thumbnail" alt=" Alan Karthikesalingam" />
+          </div>
+          <div class="col-md-10 col-sm-6">
+            <div class="m-3 text-muted">
+              <h3>
+                  Lessons on the Path from Code to Clinic  - Some Common Myths in Machine Learning for Healthcare
+                </a>
+              </h3>
+            </div>
+            <div class="m-3 text-muted">
+              <span class="card-title h3">
+                 Alan Karthikesalingam  / Google Health - London 
+              </span>
+            </div>
+            <div class="m-3 text-muted">
+              <span class="card-title h3">
+                <a href="" target="_blank" rel="noopener"></a>
+              </span>
+            </div>
+            <div class="m-3">
+              
+                <p> Abstract: Machine learning in healthcare could have transformative impact for patients, caregivers and health systems but the potential benefits remain challenging to realise at scale. Along the path from the development of a model to the realisation of clinical and health-economic impact are a number of challenges and learnings that might be transferable across a range of applications. This talk surveys some recent progress at Google Health and shares learnings from their team in moving from early research to product development; from product development to deployment; and from deployment to early measures of clinical impact. </p>
+              
+              
+                <p> Bio: Dr. Alan Karthikesalingam is a surgeon-scientist who leads the healthcare machine learning research group at Google Health in London (and formerly for healthcare at DeepMind).<br /><br />He led DeepMind and Google’s teams in four landmark studies in Nature and Nature Medicine focusing on AI for breast cancer screening with Cancer Research UK, AI for the recognition and prediction of blinding eye diseases with the world’s largest eye hospital (Moorfields) and medical records research with the Veterans Affairs developing AI early warning systems for common causes of patient deterioration, like acute kidney injury.<br /><br />He is leading work on how machine learning approaches can best promote AI safety as the team takes forward its early research into products for clinical care. Alan continues to practice clinically and supervise PhD students as a lecturer in the vascular surgery department of Imperial College, London. </p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row p-4" id='21K05'>
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header">
+        <div class="row">
+          <div class="col-md-2 col-sm-5">
+            <img src="/static/images/speakers/m-jacobs.png" width="100%" class="img-thumbnail" alt="Maia Jacobs" />
+          </div>
+          <div class="col-md-10 col-sm-6">
+            <div class="m-3 text-muted">
+              <h3>
+                  Bringing AI to the Bedside with User Centered Design
+                </a>
+              </h3>
+            </div>
+            <div class="m-3 text-muted">
+              <span class="card-title h3">
+                Maia Jacobs  / Northwestern University 
+              </span>
+            </div>
+            <div class="m-3 text-muted">
+              <span class="card-title h3">
+                <a href="http://maiajacobs.com/" target="_blank" rel="noopener">http://maiajacobs.com/</a>
+              </span>
+            </div>
+            <div class="m-3">
+              
+                <p> Abstract: In medicine, the integration of artificial intelligence (AI) and machine learning (ML) tools could lead to a paradigm shift in which human-AI collaboration becomes integrated in medical decision-making. Despite many years of enthusiasm towards these technologies, the majority of tools fail once they are deployed in the real-world, often due to failures in workflow integration and interface design. In this talk, I will share research using methods in human-computer interaction (HCI) to design and evaluate machine learning tools for real-world clinical use. Results from this work suggest that trends in explainable AI may be inappropriate for clinical environments. I will discuss paths towards designing these tools for real-world medical systems, and describe how we are using collaborations across medicine, data science, and HCI to create machine learning tools for complex medical decisions. </p>
+              
+              
+                <p> Bio: Dr. Maia Jacobs is an assistant professor at Northwestern University in Computer Science and Preventive Medicine. Her research contributes to the fields of Computer Science, Human-Computer Interaction (HCI), and Health Informatics through the design and evaluation of novel computing approaches that provide individuals with timely, relevant, and actionable health information. Recent projects include the design and deployment of mobile tools to increase health information access in rural communities, evaluating the influence of AI interface design on expert decision making, and co-designing intelligent decision support tools with clinicians. Her research has been funded by the National Science Foundation, the National Cancer Institute, and the Harvard Data Science Institute and has resulted in the deployment of tools currently being used by healthcare systems and patients around the country. She completed her PhD in Human Centered Computing at Georgia Institute of Technology and was a postdoctoral fellow in the Center for Research on Computation and Society at Harvard University. Jacobs’ work was awarded the iSchools Doctoral Dissertation Award, the Georgia Institute of Technology College of Computing Dissertation Award, and was recognized in the 2016 report to the President of the United States from the President's Cancer Panel, which focused on improving cancer-related outcomes. </p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row p-4" id='21K06'>
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header">
+        <div class="row">
+          <div class="col-md-2 col-sm-5">
+            <img src="/static/images/speakers/t-cai.jpg" width="100%" class="img-thumbnail" alt="Tianxi Cai" />
+          </div>
+          <div class="col-md-10 col-sm-6">
+            <div class="m-3 text-muted">
+              <h3>
+                  Precision Medicine with Imprecise EHR Data
+                </a>
+              </h3>
+            </div>
+            <div class="m-3 text-muted">
+              <span class="card-title h3">
+                Tianxi Cai  / Harvard Medical School 
+              </span>
+            </div>
+            <div class="m-3 text-muted">
+              <span class="card-title h3">
+                <a href="https://celehs.hms.harvard.edu/tcai/" target="_blank" rel="noopener">https://celehs.hms.harvard.edu/tcai/</a>
+              </span>
+            </div>
+            <div class="m-3">
+              
+                <p> Abstract: The wide adoption of electronic health records (EHR) systems has led to the availability of large clinical datasets available for precision medicine research. EHR data, linked with bio-repository, is a valuable new source for deriving real-word, data-driven prediction models of disease risk and treatment response. Yet, they also bring analytical difficulties. Precise information on clinical outcomes is not readily available and requires labor intensive manual chart review. Synthesizing information across healthcare systems is also challenging due to heterogeneity and privacy. In this talk, I’ll discuss analytical approaches for mining EHR data with a focus on denoising, scalability and transportability . These methods will be illustrated using EHR data from multiple healthcare centers. </p>
+              
+              
+                <p> Bio: Dr. Tianxi Cai is the John Rock Professor of Population and Translational Data Science jointly appointed in the Department of Biostatistics at the Harvard T.H. Chan School of Public Health (HSPH) and the Department of Biomedical Informatics (DBMI), Harvard Medical School, where she directs the Translational Data Science Center for a learning healthcare system. Her recent research has been focusing on developing interpretable and robust statistical and machine learning methods for deriving precision medicine strategies and more broadly for mining large-scale biomedical data including electronic health records data. </p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+  </div>
+
+      </div>
+  </div>
+
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="footer bg-light p-4">
+    <div class="container">
+        <p class="float-right"><a href="#">Back to Top</a></p>
+        <p class="text-left">© 2024 CHIL Organization Committee</p>
+    </div>
+  </footer>
+
+
+
+  <!-- External Javascript libs_ext  -->
+  <script src="https://cdn.jsdelivr.net/npm/d3@5/dist/d3.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.3/dist/handlebars.min.js"
+          integrity="sha256-/PJBs6QWvXijOFIX04kZpLb6ZtSQckdOIavLWKKOgXU="
+          crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"
+          integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+          crossorigin="anonymous"></script>
+
+  <script
+          src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+          integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+          crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+          integrity="sha256-2JaAhvdQnfNMMnhWPauHOZ2k+dzftBmBjjownu3HC4g="
+          crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/min/moment.min.js"
+          integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ="
+          crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/moment-timezone@0.5.28/builds/moment-timezone-with-data.min.js"
+          integrity="sha256-IWYg4uIC8/erItNXYvLtyYHioRi2zT1TFva8qaAU/ww="
+          crossorigin="anonymous"></script>
+
+  <!-- Library libs_ext -->
+  <script type="text/javascript" src="/static/js/libs_ext/typeahead.bundle.js"></script>
+
+  <!--    Internal Libs -->
+  <script type="text/javascript" src="/static/js/data/api.js"></script>
+
+  <!-- Google Analytics -->
+  <script
+          async
+          type="text/javascript"
+          src="https://www.googletagmanager.com/gtag/js?id=UA-"></script>
+
+  <script type="text/javascript">
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag("js", new Date());
+    gtag("config", "UA-");
+  </script>
+
+  <!-- Code for hash tags -->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      if (window.location.hash !== "") {
+        $(`a[href="${window.location.hash}"]`).tab("show");
+      }
+
+      $("a[data-toggle='tab']").on("shown.bs.tab", function (e) {
+        const hash = $(e.target).attr("href");
+        if (hash.substr(0, 1) === "#") {
+          const position = $(window).scrollTop();
+          window.location.replace(`#${hash.substr(1)}`);
+          $(window).scrollTop(position);
+        }
+      });
+
+      // Nested dropdown navigation menu
+      var ddHoverOrClick = function (e) {
+        var $el = $(this);
+        var $parent = $(this).offsetParent('.dropdown-menu');
+
+        if (!$(this).next().hasClass('show')) {
+            $(this).parents('.dropdown-menu').first().find('.show').removeClass('show');
+        }
+
+        var $subMenu = $(this).next('.dropdown-menu');
+        $subMenu.toggleClass('show');
+
+        $(this).parent('li').toggleClass('show');
+
+        $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function (e) {
+            $('.dropdown-menu .show').removeClass('show');
+        });
+
+         if (!$parent.parent().hasClass('navbar-nav')) {
+            $el.next().css({
+              "top": $el[0].offsetTop,
+              "left": -$parent.outerWidth()
+            });
+        }
+
+        return false;
+      };
+
+      $('.dropdown-menu a.dropdown-toggle').click(ddHoverOrClick).hover(ddHoverOrClick).on('touchstart', ddHoverOrClick);
+    });
+  </script>
+
+  <!-- Prevent focus from jumping to embedded rocket.chat with an iframe id="chatFrame" -->
+  <script type="text/javascript">
+    if ($("#chatFrame").length > 0) {
+          $("#chatFrame").hide();
+          $("#chatFrame").on(
+            "load",
+            function() {
+              setTimeout(
+                function(){
+                  $('#chatFrame').show();
+                  $('#chatFrame').removeAttr('style');
+                },
+                3000
+              );
+            }
+          )
+    }
+  </script>
+
+  <!-- <script src="/static/js/modules/lazyLoad.js"></script> -->
+
+
+
+</body>
+</html>

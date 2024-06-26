@@ -1,0 +1,958 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <!-- Required meta tags -->
+    <meta charset="utf-8"/>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    
+    <script type="text/javascript">
+      var auth0_domain = "chil.us.auth0.com";
+      var auth0_client_id = "idrCis50v8uMru0k189CZY3LXVK9tUnY";
+    </script>
+    <script src="https://cdn.auth0.com/js/auth0-spa-js/1.7/auth0-spa-js.production.js"></script>
+    <script type="text/javascript" src="/static/js/modules/auth0protect.js"></script>
+    
+
+    <link rel="icon" type="image/png" href="/static/images/favicon.png">
+
+    <!-- External CSS -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha256-93wNFzm2GO3EoByj9rKZCwGjAJAwr0nujPaOgwUt8ZQ="
+          crossorigin="anonymous"/>
+
+    <!-- External Fonts (no google for china) -->
+    <link rel="stylesheet" href="/static/css/main.css"/>
+    <!-- <link rel="stylesheet" href="/static/css/fa_regular.css"/> -->
+    <link rel="stylesheet" href="/static/css/fa_solid.css"/>
+    <link rel="stylesheet" href="/static/css/lazy_load.css"/>
+    <link rel="stylesheet" href="/static/css/typeahead.css"/>
+
+    <title>CHIL
+      
+        : Organizing Committee
+      
+    </title>
+  
+</head>
+
+<body>
+<!-- NAV -->
+
+  
+
+  
+
+
+  
+
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light mr-auto btco-hover-menu" id="main-nav">
+    <div class="container">
+        
+        
+          <a class="navbar-brand" href="/index.html">CHIL 2024</a>
+        
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+              class="collapse navbar-collapse flex-grow-1"
+              id="navbarNav"
+        >
+          <ul class="navbar-nav ml-auto">
+              
+              <li class="nav-item ">
+                  <a class="nav-link" href="/index.html">Home</a>
+              </li>
+              
+              <li class="nav-item ">
+                  <a class="nav-link" href="/speakers.html">Speaker Bios</a>
+              </li>
+              
+              <li class="nav-item ">
+                  <a class="nav-link" href="/calendar.html">Program</a>
+              </li>
+              
+              <li class="nav-item ">
+                  <a class="nav-link" href="/proceedings.html">Papers</a>
+              </li>
+              
+
+              
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="attendDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Attend
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="attendDropdown">
+                  <!-- <li><a class="dropdown-item" href="https://forms.gle/ytAhSYkgfyWMH3Ca9">Pre-registration</a> -->
+                    
+                      <a class="dropdown-item" href="/travel.html">Plan Your Trip</a>
+                    
+                  </li>
+                </ul>
+              </li>
+              
+
+              
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="submitDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Submit
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="submitDropdown">
+                  
+                  <li>
+                      <a class="dropdown-item" href="/call-for-papers.html">Call for Papers</a>
+                  </li>
+                  
+                  <li>
+                      <a class="dropdown-item" href="/call-for-doctoral.html">Call for Doctoral Symposium</a>
+                  </li>
+                  
+                </ul>
+              </li>
+              
+
+              
+              <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="organizationDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Organization
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="organizationDropdown">
+                  
+                  <li>
+                      <a class="dropdown-item" href="/committee.html">Committee</a>
+                  </li>
+                  
+                  <li>
+                      <a class="dropdown-item" href="/sponsor.html">Sponsorship</a>
+                  </li>
+                  
+                  <li>
+                      <a class="dropdown-item" href="/acknowledgements.html">Reviewer Acknowledgements</a>
+                  </li>
+                  
+                  <li>
+                      <a class="dropdown-item" href="/codeconduct.html">Code of Conduct</a>
+                  </li>
+                  
+                  <li>
+                      <a class="dropdown-item" href="/communityguidelines.html">Community Guidelines</a>
+                  </li>
+                  
+                </ul>
+              </li>
+              
+              
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Past Events
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  
+                  <li>
+                      <a class="dropdown-item dropdown-toggle" href="#" id="navYear2023Dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">2023</a>
+                      <ul class="dropdown-menu" aria-labelledby="navYear2023Dropdown">
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                              
+                              <li><a class="dropdown-item" href="/2023/highlights.html">Highlights</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2023/proceedings.html">Proceedings</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2023/speakers.html">Speakers</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2023/invited.html">Invited</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2023/panels.html">Panels</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2023/debates.html">Debates</a></li>
+                              
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                      </ul>
+                  </li>
+                  
+                  <li>
+                      <a class="dropdown-item dropdown-toggle" href="#" id="navYear2022Dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">2022</a>
+                      <ul class="dropdown-menu" aria-labelledby="navYear2022Dropdown">
+                          
+                            
+                          
+                            
+                          
+                            
+                              
+                              <li><a class="dropdown-item" href="/2022/highlights.html">Highlights</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2022/proceedings.html">Proceedings</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2022/speakers.html">Speakers</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2022/tutorials.html">Tutorials</a></li>
+                              
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                      </ul>
+                  </li>
+                  
+                  <li>
+                      <a class="dropdown-item dropdown-toggle" href="#" id="navYear2021Dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">2021</a>
+                      <ul class="dropdown-menu" aria-labelledby="navYear2021Dropdown">
+                          
+                            
+                          
+                            
+                              
+                              <li><a class="dropdown-item" href="/2021/highlights.html">Highlights</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2021/proceedings.html">Proceedings</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2021/speakers.html">Speakers</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2021/tutorials.html">Tutorials</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2021/workshops.html">Workshops</a></li>
+                              
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                      </ul>
+                  </li>
+                  
+                  <li>
+                      <a class="dropdown-item dropdown-toggle" href="#" id="navYear2020Dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">2020</a>
+                      <ul class="dropdown-menu" aria-labelledby="navYear2020Dropdown">
+                          
+                            
+                              
+                              <li><a class="dropdown-item" href="/2020/highlights.html">Highlights</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2020/proceedings.html">Proceedings</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2020/speakers.html">Speakers</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2020/tutorials.html">Tutorials</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2020/workshops.html">Workshops</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2020/symposiums.html">Symposiums</a></li>
+                              
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                      </ul>
+                  </li>
+                  
+                </ul>
+              </li>
+              
+          </ul>
+        </div>
+    </div>
+  </nav>
+
+
+
+  <!-- User Overrides -->
+  
+  
+
+  <div class="container content-wrapper">
+      <!-- Tabs -->
+      <div class="tabs">
+           
+      </div>
+      <!-- Content -->
+      <div class="content">
+          
+<div class="page-content committee">
+  
+    <div class="border-top my-3"></div>
+<div class="row p-4" id="section-organizing-committee">
+  <div class="col-12 bd-content">
+    <h2 class="text-center">Organizing Committee</h2>
+  </div>
+</div>
+    <div class="row committee-row">
+  
+  <div class="committee-member">
+    
+    <a href="https://healthyml.org/marzyeh/" target="_blank">
+    
+    <div class="committee-member__card">
+      <div class="committee-member__image">
+        <img src="static/images/committee/marzyeh-ghassemi.jpg" alt="Marzyeh Ghassemi">
+      </div>
+      <div class="committee-member__info">
+        <h4 class="committee-member__name">Marzyeh Ghassemi</h4>
+        <p class="committee-member__affiliation">MIT</p>
+        <p class="committee-member__role">General Chair</p>
+      </div>
+    </div>
+    
+    </a>
+    
+  </div>
+  
+  <div class="committee-member">
+    
+    <a href="https://dbmi.hms.harvard.edu/people/matthew-mcdermott" target="_blank">
+    
+    <div class="committee-member__card">
+      <div class="committee-member__image">
+        <img src="static/images/committee/matthew-mcdermott.jpg" alt="Matthew McDermott">
+      </div>
+      <div class="committee-member__info">
+        <h4 class="committee-member__name">Matthew McDermott</h4>
+        <p class="committee-member__affiliation">Harvard Medical School</p>
+        <p class="committee-member__role">General Chair</p>
+      </div>
+    </div>
+    
+    </a>
+    
+  </div>
+  
+  <div class="committee-member">
+    
+    <a href="https://wcm-wanglab.github.io/" target="_blank">
+    
+    <div class="committee-member__card">
+      <div class="committee-member__image">
+        <img src="static/images/committee/fei-wang.jpg" alt="Fei Wang">
+      </div>
+      <div class="committee-member__info">
+        <h4 class="committee-member__name">Fei Wang</h4>
+        <p class="committee-member__affiliation">Weill Cornell Medicine</p>
+        <p class="committee-member__role">Program Chair</p>
+      </div>
+    </div>
+    
+    </a>
+    
+  </div>
+  
+  <div class="committee-member">
+    
+    <a href="https://irenechen.net/" target="_blank">
+    
+    <div class="committee-member__card">
+      <div class="committee-member__image">
+        <img src="static/images/committee/irene-chen.jpg" alt="Irene Chen">
+      </div>
+      <div class="committee-member__info">
+        <h4 class="committee-member__name">Irene Chen</h4>
+        <p class="committee-member__affiliation">UC Berkeley</p>
+        <p class="committee-member__role">Program Chair</p>
+      </div>
+    </div>
+    
+    </a>
+    
+  </div>
+  
+  <div class="committee-member">
+    
+    <a href="https://www.andrew.cmu.edu/user/georgech/" target="_blank">
+    
+    <div class="committee-member__card">
+      <div class="committee-member__image">
+        <img src="static/images/committee/george-chen.jpg" alt="George Chen">
+      </div>
+      <div class="committee-member__info">
+        <h4 class="committee-member__name">George Chen</h4>
+        <p class="committee-member__affiliation">Carnegie Mellon University</p>
+        <p class="committee-member__role">Program Sub-Chair, Research Roundtables</p>
+      </div>
+    </div>
+    
+    </a>
+    
+  </div>
+  
+  <div class="committee-member">
+    
+    <a href="https://bmiai.ubc.ca/people/xiaoxiao-li" target="_blank">
+    
+    <div class="committee-member__card">
+      <div class="committee-member__image">
+        <img src="static/images/committee/xiaoxiao-li.jpg" alt="Xiaoxiao Li">
+      </div>
+      <div class="committee-member__info">
+        <h4 class="committee-member__name">Xiaoxiao Li</h4>
+        <p class="committee-member__affiliation">University of British Columbia</p>
+        <p class="committee-member__role">Program Sub-Chair, Research Roundtables</p>
+      </div>
+    </div>
+    
+    </a>
+    
+  </div>
+  
+  <div class="committee-member">
+    
+    <a href="https://www.linkedin.com/in/monica-agrawal-bb73a874/" target="_blank">
+    
+    <div class="committee-member__card">
+      <div class="committee-member__image">
+        <img src="static/images/committee/monica-agrawal.jpg" alt="Monica Agrawal">
+      </div>
+      <div class="committee-member__info">
+        <h4 class="committee-member__name">Monica Agrawal</h4>
+        <p class="committee-member__affiliation">Duke University</p>
+        <p class="committee-member__role">Program Sub-Chair, Doctoral Symposium</p>
+      </div>
+    </div>
+    
+    </a>
+    
+  </div>
+  
+  <div class="committee-member">
+    
+    <a href="https://emmarocheteau.com/" target="_blank">
+    
+    <div class="committee-member__card">
+      <div class="committee-member__image">
+        <img src="static/images/committee/emma-rocheteau.jpg" alt="Emma Rocheteau">
+      </div>
+      <div class="committee-member__info">
+        <h4 class="committee-member__name">Emma Rocheteau</h4>
+        <p class="committee-member__affiliation">University of Cambridge</p>
+        <p class="committee-member__role">Program Sub-Chair, Doctoral Symposium</p>
+      </div>
+    </div>
+    
+    </a>
+    
+  </div>
+  
+  <div class="committee-member">
+    
+    <a href="https://people.csail.mit.edu/tpollard/" target="_blank">
+    
+    <div class="committee-member__card">
+      <div class="committee-member__image">
+        <img src="static/images/committee/tom-pollard.jpg" alt="Tom Pollard">
+      </div>
+      <div class="committee-member__info">
+        <h4 class="committee-member__name">Tom Pollard</h4>
+        <p class="committee-member__affiliation">MIT</p>
+        <p class="committee-member__role">Proceedings Chair</p>
+      </div>
+    </div>
+    
+    </a>
+    
+  </div>
+  
+  <div class="committee-member">
+    
+    <a href="https://mp2893.com/" target="_blank">
+    
+    <div class="committee-member__card">
+      <div class="committee-member__image">
+        <img src="static/images/committee/edward-choi.jpg" alt="Edward Choi">
+      </div>
+      <div class="committee-member__info">
+        <h4 class="committee-member__name">Edward Choi</h4>
+        <p class="committee-member__affiliation">KAIST</p>
+        <p class="committee-member__role">Proceedings Chair</p>
+      </div>
+    </div>
+    
+    </a>
+    
+  </div>
+  
+  <div class="committee-member">
+    
+    <a href="https://pankhurisinghal.com/" target="_blank">
+    
+    <div class="committee-member__card">
+      <div class="committee-member__image">
+        <img src="static/images/committee/pankhuri-singhal.jpg" alt="Pankhuri Singhal">
+      </div>
+      <div class="committee-member__info">
+        <h4 class="committee-member__name">Pankhuri Singhal</h4>
+        <p class="committee-member__affiliation">University of Pennsylvania</p>
+        <p class="committee-member__role">Proceedings Sub-Chair, Workflow</p>
+      </div>
+    </div>
+    
+    </a>
+    
+  </div>
+  
+  <div class="committee-member">
+    
+    <a href="https://www.michaelchughes.com/" target="_blank">
+    
+    <div class="committee-member__card">
+      <div class="committee-member__image">
+        <img src="static/images/committee/michael-c-hughes.jpg" alt="Michael C. Hughes">
+      </div>
+      <div class="committee-member__info">
+        <h4 class="committee-member__name">Michael C. Hughes</h4>
+        <p class="committee-member__affiliation">Tufts University</p>
+        <p class="committee-member__role">Senior Area Chair, Track 1</p>
+      </div>
+    </div>
+    
+    </a>
+    
+  </div>
+  
+  <div class="committee-member">
+    
+    <a href="https://esizikova.github.io/" target="_blank">
+    
+    <div class="committee-member__card">
+      <div class="committee-member__image">
+        <img src="static/images/committee/elena-sizikova.jpg" alt="Elena Sizikova">
+      </div>
+      <div class="committee-member__info">
+        <h4 class="committee-member__name">Elena Sizikova</h4>
+        <p class="committee-member__affiliation">FDA</p>
+        <p class="committee-member__role">Senior Area Chair, Track 2</p>
+      </div>
+    </div>
+    
+    </a>
+    
+  </div>
+  
+  <div class="committee-member">
+    
+    <a href="https://stmilab.github.io/" target="_blank">
+    
+    <div class="committee-member__card">
+      <div class="committee-member__image">
+        <img src="static/images/committee/bobak-mortazavi.jpg" alt="Bobak Mortazavi">
+      </div>
+      <div class="committee-member__info">
+        <h4 class="committee-member__name">Bobak Mortazavi</h4>
+        <p class="committee-member__affiliation">Texas A&amp;M University</p>
+        <p class="committee-member__role">Senior Area Chair, Track 3</p>
+      </div>
+    </div>
+    
+    </a>
+    
+  </div>
+  
+  <div class="committee-member">
+    
+    <a href="https://aidh.weill.cornell.edu" target="_blank">
+    
+    <div class="committee-member__card">
+      <div class="committee-member__image">
+        <img src="static/images/committee/zehra-abedi.jpg" alt="Zehra Abedi">
+      </div>
+      <div class="committee-member__info">
+        <h4 class="committee-member__name">Zehra Abedi</h4>
+        <p class="committee-member__affiliation">Weill Cornell Medicine</p>
+        <p class="committee-member__role">Logistics Chair</p>
+      </div>
+    </div>
+    
+    </a>
+    
+  </div>
+  
+  <div class="committee-member">
+    
+    <a href="https://www.calvinzang.com/" target="_blank">
+    
+    <div class="committee-member__card">
+      <div class="committee-member__image">
+        <img src="static/images/committee/chengxi-zang.jpg" alt="Chengxi Zang">
+      </div>
+      <div class="committee-member__info">
+        <h4 class="committee-member__name">Chengxi Zang</h4>
+        <p class="committee-member__affiliation">Weill Cornell Medicine</p>
+        <p class="committee-member__role">Logistics Sub-Chair, Local</p>
+      </div>
+    </div>
+    
+    </a>
+    
+  </div>
+  
+  <div class="committee-member">
+    
+    <a href="https://www.ai4vslab.org/" target="_blank">
+    
+    <div class="committee-member__card">
+      <div class="committee-member__image">
+        <img src="static/images/committee/kaveri-thakoor.jpg" alt="Kaveri Thakoor">
+      </div>
+      <div class="committee-member__info">
+        <h4 class="committee-member__name">Kaveri Thakoor</h4>
+        <p class="committee-member__affiliation">Columbia University</p>
+        <p class="committee-member__role">Logistics Sub-Chair, Local</p>
+      </div>
+    </div>
+    
+    </a>
+    
+  </div>
+  
+  <div class="committee-member">
+    
+    <a href="https://www.linkedin.com/in/roshan-kenia/" target="_blank">
+    
+    <div class="committee-member__card">
+      <div class="committee-member__image">
+        <img src="static/images/committee/roshan-kenia.jpg" alt="Roshan Kenia">
+      </div>
+      <div class="committee-member__info">
+        <h4 class="committee-member__name">Roshan Kenia</h4>
+        <p class="committee-member__affiliation">Columbia University</p>
+        <p class="committee-member__role">Logistics Sub-Chair, Local</p>
+      </div>
+    </div>
+    
+    </a>
+    
+  </div>
+  
+  <div class="committee-member">
+    
+    <a href="https://www.linkedin.com/in/elizabeth-healey-408368115" target="_blank">
+    
+    <div class="committee-member__card">
+      <div class="committee-member__image">
+        <img src="static/images/committee/elizabeth-healey.jpg" alt="Elizabeth Healey">
+      </div>
+      <div class="committee-member__info">
+        <h4 class="committee-member__name">Elizabeth Healey</h4>
+        <p class="committee-member__affiliation">MIT</p>
+        <p class="committee-member__role">Logistics Sub-Chair, Volunteer Coordinator</p>
+      </div>
+    </div>
+    
+    </a>
+    
+  </div>
+  
+  <div class="committee-member">
+    
+    <a href="https://ahmedmalaa.github.io/" target="_blank">
+    
+    <div class="committee-member__card">
+      <div class="committee-member__image">
+        <img src="static/images/committee/ahmed-alaa.jpg" alt="Ahmed Alaa">
+      </div>
+      <div class="committee-member__info">
+        <h4 class="committee-member__name">Ahmed Alaa</h4>
+        <p class="committee-member__affiliation">UC Berkeley and UCSF</p>
+        <p class="committee-member__role">Finance Chair</p>
+      </div>
+    </div>
+    
+    </a>
+    
+  </div>
+  
+  <div class="committee-member">
+    
+    <a href="https://guaguakai.com/" target="_blank">
+    
+    <div class="committee-member__card">
+      <div class="committee-member__image">
+        <img src="static/images/committee/kai-wang.jpg" alt="Kai Wang">
+      </div>
+      <div class="committee-member__info">
+        <h4 class="committee-member__name">Kai Wang</h4>
+        <p class="committee-member__affiliation">Georgia Tech</p>
+        <p class="committee-member__role">Finance Chair</p>
+      </div>
+    </div>
+    
+    </a>
+    
+  </div>
+  
+  <div class="committee-member">
+    
+    <a href="https://monicamunnangi.github.io/" target="_blank">
+    
+    <div class="committee-member__card">
+      <div class="committee-member__image">
+        <img src="static/images/committee/monica-munnangi.jpg" alt="Monica Munnangi">
+      </div>
+      <div class="committee-member__info">
+        <h4 class="committee-member__name">Monica Munnangi</h4>
+        <p class="committee-member__affiliation">Northeastern University</p>
+        <p class="committee-member__role">Comms Chair</p>
+      </div>
+    </div>
+    
+    </a>
+    
+  </div>
+  
+  <div class="committee-member">
+    
+    <a href="https://jiachengzhuml.github.io/" target="_blank">
+    
+    <div class="committee-member__card">
+      <div class="committee-member__image">
+        <img src="static/images/committee/jiacheng-zhu.jpg" alt="Jiacheng Zhu">
+      </div>
+      <div class="committee-member__info">
+        <h4 class="committee-member__name">Jiacheng Zhu</h4>
+        <p class="committee-member__affiliation">MIT, CSAIL</p>
+        <p class="committee-member__role">Comms Sub-Chair</p>
+      </div>
+    </div>
+    
+    </a>
+    
+  </div>
+  
+  <div class="committee-member">
+    
+    <a href="https://www.linkedin.com/in/gowbrian/" target="_blank">
+    
+    <div class="committee-member__card">
+      <div class="committee-member__image">
+        <img src="static/images/committee/brian-gow.jpg" alt="Brian Gow">
+      </div>
+      <div class="committee-member__info">
+        <h4 class="committee-member__name">Brian Gow</h4>
+        <p class="committee-member__affiliation">MIT</p>
+        <p class="committee-member__role">Comms Sub-Chair</p>
+      </div>
+    </div>
+    
+    </a>
+    
+  </div>
+  
+  <div class="committee-member">
+    
+    <a href="https://koyenapal.github.io/" target="_blank">
+    
+    <div class="committee-member__card">
+      <div class="committee-member__image">
+        <img src="static/images/committee/koyena-pal.jpg" alt="Koyena Pal">
+      </div>
+      <div class="committee-member__info">
+        <h4 class="committee-member__name">Koyena Pal</h4>
+        <p class="committee-member__affiliation">Northeastern University</p>
+        <p class="committee-member__role">Comms Sub-Chair</p>
+      </div>
+    </div>
+    
+    </a>
+    
+  </div>
+  
+</div>
+  
+</div>
+
+<div class="committee-info">
+  <p>Contact the Organizing Committee by emailing <a href="mailto:info@chilconference.org">info@chilconference.org</a></p>
+</div>
+
+      </div>
+  </div>
+
+
+
+  
+
+
+  <!-- Footer -->
+  <footer class="footer bg-light p-4">
+    <div class="container">
+        <p class="float-right"><a href="#">Back to Top</a></p>
+        <p class="text-left">© 2024 CHIL Organization Committee</p>
+    </div>
+  </footer>
+
+
+
+  <!-- External Javascript libs_ext  -->
+  <script src="https://cdn.jsdelivr.net/npm/d3@5/dist/d3.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.3/dist/handlebars.min.js"
+          integrity="sha256-/PJBs6QWvXijOFIX04kZpLb6ZtSQckdOIavLWKKOgXU="
+          crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"
+          integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+          crossorigin="anonymous"></script>
+
+  <script
+          src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+          integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+          crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+          integrity="sha256-2JaAhvdQnfNMMnhWPauHOZ2k+dzftBmBjjownu3HC4g="
+          crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/min/moment.min.js"
+          integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ="
+          crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/moment-timezone@0.5.28/builds/moment-timezone-with-data.min.js"
+          integrity="sha256-IWYg4uIC8/erItNXYvLtyYHioRi2zT1TFva8qaAU/ww="
+          crossorigin="anonymous"></script>
+
+  <!-- Library libs_ext -->
+  <script type="text/javascript" src="/static/js/libs_ext/typeahead.bundle.js"></script>
+
+  <!--    Internal Libs -->
+  <script type="text/javascript" src="/static/js/data/api.js"></script>
+
+  <!-- Google Analytics -->
+  <script
+          async
+          type="text/javascript"
+          src="https://www.googletagmanager.com/gtag/js?id=UA-"></script>
+
+  <script type="text/javascript">
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag("js", new Date());
+    gtag("config", "UA-");
+  </script>
+
+  <!-- Code for hash tags -->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      if (window.location.hash !== "") {
+        $(`a[href="${window.location.hash}"]`).tab("show");
+      }
+
+      $("a[data-toggle='tab']").on("shown.bs.tab", function (e) {
+        const hash = $(e.target).attr("href");
+        if (hash.substr(0, 1) === "#") {
+          const position = $(window).scrollTop();
+          window.location.replace(`#${hash.substr(1)}`);
+          $(window).scrollTop(position);
+        }
+      });
+
+      // Nested dropdown navigation menu
+      var ddHoverOrClick = function (e) {
+        var $el = $(this);
+        var $parent = $(this).offsetParent('.dropdown-menu');
+
+        if (!$(this).next().hasClass('show')) {
+            $(this).parents('.dropdown-menu').first().find('.show').removeClass('show');
+        }
+
+        var $subMenu = $(this).next('.dropdown-menu');
+        $subMenu.toggleClass('show');
+
+        $(this).parent('li').toggleClass('show');
+
+        $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function (e) {
+            $('.dropdown-menu .show').removeClass('show');
+        });
+
+         if (!$parent.parent().hasClass('navbar-nav')) {
+            $el.next().css({
+              "top": $el[0].offsetTop,
+              "left": -$parent.outerWidth()
+            });
+        }
+
+        return false;
+      };
+
+      $('.dropdown-menu a.dropdown-toggle').click(ddHoverOrClick).hover(ddHoverOrClick).on('touchstart', ddHoverOrClick);
+    });
+  </script>
+
+  <!-- Prevent focus from jumping to embedded rocket.chat with an iframe id="chatFrame" -->
+  <script type="text/javascript">
+    if ($("#chatFrame").length > 0) {
+          $("#chatFrame").hide();
+          $("#chatFrame").on(
+            "load",
+            function() {
+              setTimeout(
+                function(){
+                  $('#chatFrame').show();
+                  $('#chatFrame').removeAttr('style');
+                },
+                3000
+              );
+            }
+          )
+    }
+  </script>
+
+  <!-- <script src="/static/js/modules/lazyLoad.js"></script> -->
+
+
+
+</body>
+</html>

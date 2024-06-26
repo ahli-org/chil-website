@@ -1,0 +1,25 @@
+/* TYPOGRAPHY */
+@import "fonts/Exo.css";
+@import "fonts/Cuprum.css";
+@import "fonts/Lato.css";
+@import "fonts/Oswald.css";
+
+/* GLOBAL STYLES */
+@import "global.css";
+
+/* COMPONENTS */
+@import "countdown.css";
+@import "dropdownmenu.css";
+
+/* PAGES */
+@import "pages/index.css";
+@import "pages/call-for-papers.css";
+@import "pages/sponsor.css";
+@import "pages/schedule.css";
+@import "pages/live.css";
+@import "pages/speaker.css";
+@import "pages/tutorial.css";
+@import "pages/roundtable.css";
+@import "pages/proceeding.css";
+@import "pages/symposium.css";
+@import "pages/committee.css";

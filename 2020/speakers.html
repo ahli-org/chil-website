@@ -1,0 +1,675 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <!-- Required meta tags -->
+    <meta charset="utf-8"/>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    
+    <script type="text/javascript">
+      var auth0_domain = "chil.us.auth0.com";
+      var auth0_client_id = "idrCis50v8uMru0k189CZY3LXVK9tUnY";
+    </script>
+    <script src="https://cdn.auth0.com/js/auth0-spa-js/1.7/auth0-spa-js.production.js"></script>
+    <script type="text/javascript" src="/static/js/modules/auth0protect.js"></script>
+    
+
+    <link rel="icon" type="image/png" href="/static/images/favicon.png">
+
+    <!-- External CSS -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha256-93wNFzm2GO3EoByj9rKZCwGjAJAwr0nujPaOgwUt8ZQ="
+          crossorigin="anonymous"/>
+
+    <!-- External Fonts (no google for china) -->
+    <link rel="stylesheet" href="/static/css/main.css"/>
+    <!-- <link rel="stylesheet" href="/static/css/fa_regular.css"/> -->
+    <link rel="stylesheet" href="/static/css/fa_solid.css"/>
+    <link rel="stylesheet" href="/static/css/lazy_load.css"/>
+    <link rel="stylesheet" href="/static/css/typeahead.css"/>
+
+    <title>CHIL
+      
+        : Past Events - Keynotes
+      
+    </title>
+  
+</head>
+
+<body>
+<!-- NAV -->
+
+  
+
+  
+
+
+  
+
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light mr-auto btco-hover-menu" id="main-nav">
+    <div class="container">
+        
+        
+          <a class="navbar-brand" href="/index.html">CHIL 2024</a>
+        
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+              class="collapse navbar-collapse flex-grow-1"
+              id="navbarNav"
+        >
+          <ul class="navbar-nav ml-auto">
+              
+              <li class="nav-item ">
+                  <a class="nav-link" href="/index.html">Home</a>
+              </li>
+              
+              <li class="nav-item ">
+                  <a class="nav-link" href="/speakers.html">Speaker Bios</a>
+              </li>
+              
+              <li class="nav-item ">
+                  <a class="nav-link" href="/calendar.html">Program</a>
+              </li>
+              
+              <li class="nav-item ">
+                  <a class="nav-link" href="/proceedings.html">Papers</a>
+              </li>
+              
+
+              
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="attendDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Attend
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="attendDropdown">
+                  <!-- <li><a class="dropdown-item" href="https://forms.gle/ytAhSYkgfyWMH3Ca9">Pre-registration</a> -->
+                    
+                      <a class="dropdown-item" href="/travel.html">Plan Your Trip</a>
+                    
+                  </li>
+                </ul>
+              </li>
+              
+
+              
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="submitDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Submit
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="submitDropdown">
+                  
+                  <li>
+                      <a class="dropdown-item" href="/call-for-papers.html">Call for Papers</a>
+                  </li>
+                  
+                  <li>
+                      <a class="dropdown-item" href="/call-for-doctoral.html">Call for Doctoral Symposium</a>
+                  </li>
+                  
+                </ul>
+              </li>
+              
+
+              
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="organizationDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Organization
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="organizationDropdown">
+                  
+                  <li>
+                      <a class="dropdown-item" href="/committee.html">Committee</a>
+                  </li>
+                  
+                  <li>
+                      <a class="dropdown-item" href="/sponsor.html">Sponsorship</a>
+                  </li>
+                  
+                  <li>
+                      <a class="dropdown-item" href="/acknowledgements.html">Reviewer Acknowledgements</a>
+                  </li>
+                  
+                  <li>
+                      <a class="dropdown-item" href="/codeconduct.html">Code of Conduct</a>
+                  </li>
+                  
+                  <li>
+                      <a class="dropdown-item" href="/communityguidelines.html">Community Guidelines</a>
+                  </li>
+                  
+                </ul>
+              </li>
+              
+              
+              <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Past Events
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  
+                  <li>
+                      <a class="dropdown-item dropdown-toggle" href="#" id="navYear2023Dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">2023</a>
+                      <ul class="dropdown-menu" aria-labelledby="navYear2023Dropdown">
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                              
+                              <li><a class="dropdown-item" href="/2023/highlights.html">Highlights</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2023/proceedings.html">Proceedings</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2023/speakers.html">Speakers</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2023/invited.html">Invited</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2023/panels.html">Panels</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2023/debates.html">Debates</a></li>
+                              
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                      </ul>
+                  </li>
+                  
+                  <li>
+                      <a class="dropdown-item dropdown-toggle" href="#" id="navYear2022Dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">2022</a>
+                      <ul class="dropdown-menu" aria-labelledby="navYear2022Dropdown">
+                          
+                            
+                          
+                            
+                          
+                            
+                              
+                              <li><a class="dropdown-item" href="/2022/highlights.html">Highlights</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2022/proceedings.html">Proceedings</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2022/speakers.html">Speakers</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2022/tutorials.html">Tutorials</a></li>
+                              
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                      </ul>
+                  </li>
+                  
+                  <li>
+                      <a class="dropdown-item dropdown-toggle" href="#" id="navYear2021Dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">2021</a>
+                      <ul class="dropdown-menu" aria-labelledby="navYear2021Dropdown">
+                          
+                            
+                          
+                            
+                              
+                              <li><a class="dropdown-item" href="/2021/highlights.html">Highlights</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2021/proceedings.html">Proceedings</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2021/speakers.html">Speakers</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2021/tutorials.html">Tutorials</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2021/workshops.html">Workshops</a></li>
+                              
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                      </ul>
+                  </li>
+                  
+                  <li>
+                      <a class="dropdown-item dropdown-toggle" href="#" id="navYear2020Dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">2020</a>
+                      <ul class="dropdown-menu" aria-labelledby="navYear2020Dropdown">
+                          
+                            
+                              
+                              <li><a class="dropdown-item" href="/2020/highlights.html">Highlights</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2020/proceedings.html">Proceedings</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2020/speakers.html">Speakers</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2020/tutorials.html">Tutorials</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2020/workshops.html">Workshops</a></li>
+                              
+                              <li><a class="dropdown-item" href="/2020/symposiums.html">Symposiums</a></li>
+                              
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                            
+                          
+                      </ul>
+                  </li>
+                  
+                </ul>
+              </li>
+              
+          </ul>
+        </div>
+    </div>
+  </nav>
+
+
+
+  <!-- User Overrides -->
+  
+  
+
+  <div class="container content-wrapper">
+      <!-- Tabs -->
+      <div class="tabs">
+           
+      </div>
+      <!-- Content -->
+      <div class="content">
+          
+  <div class="page-header text-center">
+    <h1>Keynotes from ACM CHIL 2020</h1>
+  </div>
+  <div class="page-content">
+    <!-- Speakers -->
+    
+      
+<div class="row p-4" id='20K01'>
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header">
+        <div class="row">
+          <div class="col-md-2 col-sm-5">
+            <img src="/static/images/speakers/yoshua_bengio.png" width="100%" class="img-thumbnail" alt="Yoshua Bengio" />
+          </div>
+          <div class="col-md-10 col-sm-6">
+            <div class="m-3 text-muted">
+              <h3>
+                  Machine Learning Challenges in the Fight for Social Good - the Covid-19 Case
+                </a>
+              </h3>
+            </div>
+            <div class="m-3 text-muted">
+              <span class="card-title h3">
+                Yoshua Bengio  / University of Montreal 
+              </span>
+            </div>
+            <div class="m-3 text-muted">
+              <span class="card-title h3">
+                <a href="" target="_blank" rel="noopener"></a>
+              </span>
+            </div>
+            <div class="m-3">
+              
+                <p> Abstract: This talk outlines two Mila projects aimed at fighting the Covid-19 pandemic which are part of Mila's AI for Humanity mission. The first one is about discovering antivirals, either via repurposing several existing drugs using graph neural networks or via discovering new drug-like molecules using reinforcement learning and docking simulations to search in the molecular space. The second project is about using machine learning to provide early warning signals to people who are contagious -- especially if they don't realize that they are -- by exchanging information between phones of users who have had dangerous contacts with each other. This extends digital contact tracing by incorporating information about symptoms, medical condition and behavior (like wearing a mask) and relies on a sophisticated epidemiological model at the individual levels in which we can simulate different individual-level and society-level strategies. </p>
+              
+              
+                <p> Bio: Yoshua Bengio is Professor in the Computer Science and Operations Research departments at U. Montreal, founder and scientific director of Mila and of IVADO. He is a Fellow of the Royal Society of London and of the Royal Society of Canada, has received a Canada Research Chair and a Canada CIFAR AI Chair and is a recipient of the 2018 Turing Award for pioneering deep learning, is an officer of the Order of Canada, a member of the NeurIPS advisory board, co-founder and member of the board of the ICLR conference, and program director of the CIFAR program on Learning in Machines and Brains. His goal is to contribute to uncovering the principles giving rise to intelligence through learning, as well as favour the development of AI for the benefit of all. </p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row p-4" id='20K02'>
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header">
+        <div class="row">
+          <div class="col-md-2 col-sm-5">
+            <img src="/static/images/speakers/elaine_nsoesie.jpg" width="100%" class="img-thumbnail" alt="Elaine Nsoesie" />
+          </div>
+          <div class="col-md-10 col-sm-6">
+            <div class="m-3 text-muted">
+              <h3>
+                  Digital Platforms &amp; Public Health in Africa
+                </a>
+              </h3>
+            </div>
+            <div class="m-3 text-muted">
+              <span class="card-title h3">
+                Elaine Nsoesie  / Boston University 
+              </span>
+            </div>
+            <div class="m-3 text-muted">
+              <span class="card-title h3">
+                <a href="" target="_blank" rel="noopener"></a>
+              </span>
+            </div>
+            <div class="m-3">
+              
+                <p> Abstract: Countries in Sub-Saharan Africa are facing a double burden of infectious and noncommunicable diseases. The burden of noncommunicable diseases such as, diabetes and hypertension, are expected to continue increasing. Digital data and tools that can be used to study the patterns of health and disease in populations offer opportunities for improving public health. Digital platforms such as, social media, search engines, and internet forums, have been widely accepted in Sub-Saharan Africa for health information seeking and sharing. These tools can be used to improve public health in Sub-Saharan Africa in three ways: (1) monitoring health information seeking and providing health education, (2) monitoring risk factors, and (3) monitoring disease incidence. However, in order for these tools to be effective, it is important to consider and incorporate into analytical processes the distinct social, cultural, and economic context in Sub-Saharan African countries. </p>
+              
+              
+                <p> Bio: Dr. Nsoesie is an Assistant Professor of Global Health at Boston University (BU) School of Public Health. She is also a BU Data Science Faculty Fellow as part of the BU Data Science Initiative at the Hariri Institute for Computing and a Data and Innovation Fellow at The Directorate of Science, Technology and Innovation (DSTI) in the Office of the President in Sierra Leone. Dr. Nsoesie applies data science methodologies to global health problems, using digital data and technology to improve health, particularly in the realm of surveillance of chronic and infectious diseases. She has worked with local public health departments in the United States and international organizations. She completed her postdoctoral studies at Harvard Medical School, and her PhD in Computational Epidemiology from the Genetics, Bioinformatics and Computational Biology program at Virginia Tech. She also has an MS in Statistics and a BS in Mathematics. She is the founder of Rethé –  an initiative focused on providing scientific writing tools and resources to student communities in Africa in order to increase representation in scientific publications. She has written for NPR, The Conversation, Public Health Post and Quartz. Dr. Nsoesie was born and raised in Cameroon. </p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row p-4" id='20K03'>
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header">
+        <div class="row">
+          <div class="col-md-2 col-sm-5">
+            <img src="/static/images/speakers/sherri_rose.png" width="100%" class="img-thumbnail" alt="Sherri Rose" />
+          </div>
+          <div class="col-md-10 col-sm-6">
+            <div class="m-3 text-muted">
+              <h3>
+                  Machine Learning in Health Care: Too Important to Be a Toy Example
+                </a>
+              </h3>
+            </div>
+            <div class="m-3 text-muted">
+              <span class="card-title h3">
+                Sherri Rose  / Harvard Medical School 
+              </span>
+            </div>
+            <div class="m-3 text-muted">
+              <span class="card-title h3">
+                <a href="" target="_blank" rel="noopener"></a>
+              </span>
+            </div>
+            <div class="m-3">
+              
+                <p> Abstract: The massive size of the health care sector make data science applications in this space particularly salient for social policy. An overarching theme of this keynote is that developing machine learning methodology tailored to specific substantive health problems and the associated electronic health data is critical given the stakes involved, rather than eschewing complexity in simplified scenarios that may no longer represent an actual real-world problem. </p>
+              
+              
+                <p> Bio: Sherri Rose, Ph.D. is an Associate Professor of Health Care Policy at Harvard Medical School and Co-Director of the Health Policy Data Science Lab. Her research in health policy focuses on risk adjustment, comparative effectiveness, and health program evaluation. Dr. Rose coauthored the first book on machine learning for causal inference and has published work across fields, including in Biometrics, JASA, PMLR,Journal of Health Economics, and NEJM. She currently serves as co-editor of the journal Biostatistics and is Chair-Elect of the American Statistical Association’s Biometrics Section. Her honors include the ISPOR Bernie J. O’Brien New Investigator Award for exceptional early career work in health economics and outcomes research and an NIH Director’s New Innovator Award to develop machine learning estimators for generalizability in health policy. </p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row p-4" id='20K04'>
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header">
+        <div class="row">
+          <div class="col-md-2 col-sm-5">
+            <img src="/static/images/speakers/ruslan_salakhutdinov.png" width="100%" class="img-thumbnail" alt="Ruslan Salakhutdinov" />
+          </div>
+          <div class="col-md-10 col-sm-6">
+            <div class="m-3 text-muted">
+              <h3>
+                  Incorporating Domain Knowledge into Deep Learning Models
+                </a>
+              </h3>
+            </div>
+            <div class="m-3 text-muted">
+              <span class="card-title h3">
+                Ruslan Salakhutdinov  / Carnegie Mellon University 
+              </span>
+            </div>
+            <div class="m-3 text-muted">
+              <span class="card-title h3">
+                <a href="" target="_blank" rel="noopener"></a>
+              </span>
+            </div>
+            <div class="m-3">
+              
+                <p> Abstract: Details to be confirmed. </p>
+              
+              
+                <p> Bio: Dr. Ruslan Salakhutdinov is a UPMC professor of Computer Science at Carnegie Mellon University. He has served as an area chair for NIPS, ICML, CVPR, and ICLR. He holds a PhD from University of Toronto and completed postdoctoral training at Massachusetts Institute of Technology. </p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row p-4" id='20K05'>
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header">
+        <div class="row">
+          <div class="col-md-2 col-sm-5">
+            <img src="/static/images/speakers/nigam_shah.png" width="100%" class="img-thumbnail" alt="Nigam Shah" />
+          </div>
+          <div class="col-md-10 col-sm-6">
+            <div class="m-3 text-muted">
+              <h3>
+                  A framework for shaping the future of AI in healthcare
+                </a>
+              </h3>
+            </div>
+            <div class="m-3 text-muted">
+              <span class="card-title h3">
+                Nigam Shah  / Stanford University 
+              </span>
+            </div>
+            <div class="m-3 text-muted">
+              <span class="card-title h3">
+                <a href="" target="_blank" rel="noopener"></a>
+              </span>
+            </div>
+            <div class="m-3">
+              
+                <p> Abstract: In this session we will explore strategies for, and issues involved in, bringing Artificial Intelligence (AI) technologies to the clinic, safely and ethically. We will discuss the characteristics of a sound data strategy for powering a machine learning (ML) health system. The session introduces a frame-work for analyzing the utility of ML models in healthcare and discusses the implicit assumptions in aligning incentives for AI guided healthcare actions. </p>
+              
+              
+                <p> Bio: Dr. Nigam Shah is Associate Professor of Medicine (Biomedical Informatics) at Stanford University, and serves as the Associate CIO for Data Science for Stanford Health Care. Dr. Shah’s research focuses on combining machine learning and prior knowledge in medical ontologies to enable the learning health system. Dr. Shah was elected into the American College of Medical Informatics (ACMI) in 2015 and is inducted into the American Society for Clinical Investigation (ASCI) in 2016. He holds an MBBS from Baroda Medical College, India, a PhD from Penn State University and completed postdoctoral training at Stanford University. </p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+  </div>
+
+      </div>
+  </div>
+
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="footer bg-light p-4">
+    <div class="container">
+        <p class="float-right"><a href="#">Back to Top</a></p>
+        <p class="text-left">© 2024 CHIL Organization Committee</p>
+    </div>
+  </footer>
+
+
+
+  <!-- External Javascript libs_ext  -->
+  <script src="https://cdn.jsdelivr.net/npm/d3@5/dist/d3.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.3/dist/handlebars.min.js"
+          integrity="sha256-/PJBs6QWvXijOFIX04kZpLb6ZtSQckdOIavLWKKOgXU="
+          crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"
+          integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+          crossorigin="anonymous"></script>
+
+  <script
+          src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+          integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+          crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+          integrity="sha256-2JaAhvdQnfNMMnhWPauHOZ2k+dzftBmBjjownu3HC4g="
+          crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/min/moment.min.js"
+          integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ="
+          crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/moment-timezone@0.5.28/builds/moment-timezone-with-data.min.js"
+          integrity="sha256-IWYg4uIC8/erItNXYvLtyYHioRi2zT1TFva8qaAU/ww="
+          crossorigin="anonymous"></script>
+
+  <!-- Library libs_ext -->
+  <script type="text/javascript" src="/static/js/libs_ext/typeahead.bundle.js"></script>
+
+  <!--    Internal Libs -->
+  <script type="text/javascript" src="/static/js/data/api.js"></script>
+
+  <!-- Google Analytics -->
+  <script
+          async
+          type="text/javascript"
+          src="https://www.googletagmanager.com/gtag/js?id=UA-"></script>
+
+  <script type="text/javascript">
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag("js", new Date());
+    gtag("config", "UA-");
+  </script>
+
+  <!-- Code for hash tags -->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      if (window.location.hash !== "") {
+        $(`a[href="${window.location.hash}"]`).tab("show");
+      }
+
+      $("a[data-toggle='tab']").on("shown.bs.tab", function (e) {
+        const hash = $(e.target).attr("href");
+        if (hash.substr(0, 1) === "#") {
+          const position = $(window).scrollTop();
+          window.location.replace(`#${hash.substr(1)}`);
+          $(window).scrollTop(position);
+        }
+      });
+
+      // Nested dropdown navigation menu
+      var ddHoverOrClick = function (e) {
+        var $el = $(this);
+        var $parent = $(this).offsetParent('.dropdown-menu');
+
+        if (!$(this).next().hasClass('show')) {
+            $(this).parents('.dropdown-menu').first().find('.show').removeClass('show');
+        }
+
+        var $subMenu = $(this).next('.dropdown-menu');
+        $subMenu.toggleClass('show');
+
+        $(this).parent('li').toggleClass('show');
+
+        $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function (e) {
+            $('.dropdown-menu .show').removeClass('show');
+        });
+
+         if (!$parent.parent().hasClass('navbar-nav')) {
+            $el.next().css({
+              "top": $el[0].offsetTop,
+              "left": -$parent.outerWidth()
+            });
+        }
+
+        return false;
+      };
+
+      $('.dropdown-menu a.dropdown-toggle').click(ddHoverOrClick).hover(ddHoverOrClick).on('touchstart', ddHoverOrClick);
+    });
+  </script>
+
+  <!-- Prevent focus from jumping to embedded rocket.chat with an iframe id="chatFrame" -->
+  <script type="text/javascript">
+    if ($("#chatFrame").length > 0) {
+          $("#chatFrame").hide();
+          $("#chatFrame").on(
+            "load",
+            function() {
+              setTimeout(
+                function(){
+                  $('#chatFrame').show();
+                  $('#chatFrame').removeAttr('style');
+                },
+                3000
+              );
+            }
+          )
+    }
+  </script>
+
+  <!-- <script src="/static/js/modules/lazyLoad.js"></script> -->
+
+
+
+</body>
+</html>

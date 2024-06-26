@@ -1,0 +1,17 @@
+/* LIVE CSS */
+
+.live iframe {
+  border: none;
+}
+
+.live .table-tutorials {
+  margin-bottom: 60px;
+}
+
+.live .table-tutorials td {
+  width: 33.33%;
+}
+
+.live .table-tutorials a {
+  font-size: 1.2rem;
+}
