@@ -33,7 +33,7 @@ export const SITE = {
   presentedBy: '',
   description:
     'AHLI CHIL is designed to spark insight-driven discussions among clinicians and researchers, from industry and academia, in machine learning, health policy, causality, fairness, and other related areas.',
-  dates: 'Dates to be announced',
+  dates: 'June 2027',
   location: 'Chicago, IL',
   // Venue not yet confirmed. Fill in name/building/address once it is.
   venue: {
@@ -46,7 +46,7 @@ export const SITE = {
   register: 'https://chil.ahli.cc/attend/register/',
   // Shows the Register button in the header. Off until 2027 registration opens.
   registrationOpen: false,
-  newsletter: 'https://ahli.cc/',
+  newsletter: 'https://ahli.us21.list-manage.com/subscribe?u=04b29e704730e347c528bdca7&id=83738eac2b',
   youtube: 'https://www.youtube.com/@ahli_cc',
   bluesky: { handle: '@ahli-cc.bsky.social', url: 'https://bsky.app/profile/ahli-cc.bsky.social' },
   x: { handle: '@CHILconference', url: 'https://x.com/chilconference' },
