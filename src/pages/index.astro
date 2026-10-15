@@ -1,0 +1,134 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SponsorTiers from '../components/SponsorTiers.astro';
+import PersonRing from '../components/PersonRing.astro';
+import Gallery from '../components/Gallery.astro';
+import { FEATURED_SPEAKERS } from '../data/people';
+import { SITE, url } from '../lib/site';
+
+const base = import.meta.env.BASE_URL;
+const SHOW_SPEAKERS = false;
+// Thumbnails are cropped to 3:2; `focus` (CSS object-position) picks which part shows.
+const galleryFocus: Record<number, string> = { 14: 'center 25%' };
+const gallery = Array.from({ length: 16 }, (_, i) => ({ src: `images/gallery/${i + 1}.jpg`, focus: galleryFocus[i + 1] }));
+
+// Feature cards (badge image on the right, dark slide-bg.jpg background; styles under
+// .highlight in global.css). Both are hidden until the 2027 details are set: update
+// the date/copy/links, then set `show: true`. The section disappears when none show.
+const allHighlights = [
+  {
+    show: false,
+    date: 'Sunday, June 28, 2026',
+    title: 'Health AI Builders 2.0: A CHIL Unconference',
+    body: 'Are you building AI-first solutions in healthcare? Join us for a unique gathering of startup founders, technical builders, and health AI experts. Hosted as part of the AHLI CHIL, this Unconference features talks, small group roundtables, and plenty of time to network.',
+    image: 'images/unconference-badge.png',
+    links: [
+      { label: 'RSVP', href: url('submit/unconference'), kind: 'btn-primary' },
+      { label: 'Watch 2025 Unconference', href: 'https://www.youtube.com/watch?v=pnREWS-iBmM', kind: 'btn-outline' },
+    ],
+  },
+  {
+    show: false,
+    date: 'Monday, June 29, 2026',
+    title: 'Doctoral Symposium',
+    body: 'Are you a PhD student seeking mentorship and feedback on your research? The CHIL Doctoral Symposium provides opportunities to connect with senior experts in the field and present your work in a poster session or lightning talk.',
+    image: 'images/doctoral-badge.png',
+    links: [{ label: 'Learn more', href: url('submit/doctoral-symposium'), kind: 'btn-primary' }],
+  },
+];
+const highlights = allHighlights.filter((h) => h.show);
+---
+<BaseLayout title="Home" overlayHeader>
+  <section class="hero" style={`--hero: url('${base}images/trip/chicago-banner.jpg')`}>
+    <div class="hero-inner">
+      <div class="hero-copy">
+        {SITE.presentedBy && <p class="hero-kicker">{SITE.presentedBy}</p>}
+        <h1>{SITE.edition} {SITE.tagline}</h1>
+        <p class="hero-lead">{SITE.description}</p>
+        <span class="hero-when">{SITE.dates} · {SITE.location}</span>
+        <div class="btn-row">
+          <a class="btn btn-primary" href={SITE.youtube} target="_blank" rel="noopener noreferrer">Watch Past Events</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap about">
+      <div class="about-photo">
+        <img src={`${base}images/chil-audience.jpg`} alt="Attendees listening to a talk at a previous CHIL conference" width="1200" height="800" />
+      </div>
+      <div class="about-copy">
+        <h2>{SITE.dates}</h2>
+        <p class="about-loc">{SITE.location}</p>
+        <p class="about-venue">{[SITE.venue.name, SITE.venue.building, SITE.venue.address].filter(Boolean).map((line, i) => <>{i > 0 && <br />}{line}</>)}</p>
+        <p class="about-contact">
+          Please direct any questions to <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.<br />
+          For announcements, follow AHLI on Bluesky! <a href={SITE.bluesky.url} target="_blank" rel="noopener noreferrer">{SITE.bluesky.handle}</a>
+        </p>
+        <div class="stats">
+          {SITE.stats.map((s) => <div class="stat"><strong>{s.value}</strong><span>{s.label}</span></div>)}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {highlights.length > 0 && (
+  <section class="section" style="padding-top:0">
+    <div class="wrap highlights">
+      {highlights.map((h) => (
+        <article class="highlight" style={`--bg: url('${base}images/slide-bg.jpg')`}>
+          <div>
+            <p class="highlight-date">{h.date}</p>
+            <h3>{h.title}</h3>
+            <p>{h.body}</p>
+            <div class="btn-row">
+              {h.links.map((l) => (
+                <a class={`btn ${l.kind}`} href={l.href} {...(l.href.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {})}>{l.label}</a>
+              ))}
+            </div>
+          </div>
+          <img src={`${base}${h.image}`} alt="" loading="lazy" width="500" height="500" />
+        </article>
+      ))}
+    </div>
+  </section>
+  )}
+
+  {/* Speakers & Panelists — hidden until 2027 speakers are confirmed. Set SHOW_SPEAKERS
+      to true once FEATURED_SPEAKERS (src/data/people.ts) has this year's people. */}
+  {SHOW_SPEAKERS && (
+  <section class="section section--grey">
+    <div class="wrap">
+      <h2 class="section-title">Speakers &amp; Panelists</h2>
+      <div class="ring-grid">
+        {FEATURED_SPEAKERS.map((p) => <PersonRing person={p} />)}
+      </div>
+      <div class="btn-row" style="justify-content:center;margin-top:2.6rem">
+        <a class="btn btn-primary" href={url('speakers')}>See all talks</a>
+        <a class="btn btn-outline" href={url('attend/schedule')}>View schedule</a>
+      </div>
+    </div>
+  </section>
+  )}
+
+  <section class="section section--gallery">
+    <Gallery photos={gallery} />
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="newsletter">
+        <h2>Subscribe to AHLI's newsletter for news and event updates</h2>
+        <a class="btn btn-primary" href={SITE.newsletter} target="_blank" rel="noopener noreferrer">Subscribe</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:1rem">
+    <div class="wrap">
+      <SponsorTiers />
+      <p style="text-align:center"><a href={url('sponsor')}>Become a sponsor →</a></p>
+    </div>
+  </section>
+</BaseLayout>

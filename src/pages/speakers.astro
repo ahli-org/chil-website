@@ -1,0 +1,35 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageBanner from '../components/PageBanner.astro';
+import { SPEAKER_SESSIONS } from '../data/people';
+
+const base = import.meta.env.BASE_URL;
+---
+<BaseLayout title="Speakers">
+  <PageBanner title="Speakers" />
+  <section class="section">
+    <div class="wrap prose" style="max-width:60rem">
+      {SPEAKER_SESSIONS.map((s) => (
+        <section class="session">
+          <h2 class="session-title">{s.title}</h2>
+          {s.talks.map((t) => (
+            <article class="talk" id={t.photo?.replace(/^people\/|\.\w+$/g, '')}>
+              <img class="talk-photo" src={`${base}${t.photo}`} alt={t.name} loading="lazy" width="300" height="300" />
+              <div class="talk-body">
+                {t.title && <h3 class="talk-title">{t.title}</h3>}
+                <p class="talk-who">{t.name}, {t.affil}{t.role && ` · ${t.role}`}</p>
+                {t.abstract?.map((p, i) => <p>{i === 0 && <span class="talk-label">Abstract</span>}{p}</p>)}
+                {t.bio && (
+                  <details class="talk-more" open={!t.abstract}>
+                    <summary>Bio</summary>
+                    {t.bio.map((p) => <p>{p}</p>)}
+                  </details>
+                )}
+              </div>
+            </article>
+          ))}
+        </section>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

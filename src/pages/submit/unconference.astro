@@ -1,0 +1,29 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageBanner from '../../components/PageBanner.astro';
+import { Content } from '../../partials/unconference.md';
+import { UNCONFERENCE_SPEAKERS } from '../../data/people';
+
+const base = import.meta.env.BASE_URL;
+---
+<BaseLayout title="Unconference" description="Health AI Builders 2.0: A CHIL 2026 Unconference — Sunday, June 28, 2026, Seattle.">
+  <PageBanner title="Unconference" section="Program" />
+  <section class="section">
+    <div class="wrap prose">
+      <Content />
+
+      <h3>Speakers</h3>
+      <div class="bio-list">
+        {UNCONFERENCE_SPEAKERS.map((p) => (
+          <div class="bio">
+            <img src={`${base}${p.photo}`} alt="" loading="lazy" width="300" height="300" />
+            <div>
+              <h3>{p.name}</h3>
+              {p.bio.map((para) => <p>{para}</p>)}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>

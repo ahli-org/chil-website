@@ -1,0 +1,87 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageBanner from '../../components/PageBanner.astro';
+import { url } from '../../lib/site';
+
+// kind: bold label before the title. break: muted row (meals, coffee, check-in).
+type Row = { time: string; kind?: string; title?: string; href?: string; break?: boolean };
+type Day = { name: string; date: string; rows: Row[] };
+
+const days: Day[] = [
+  {
+    name: 'CHIL Day 1',
+    date: 'Monday, June 29',
+    rows: [
+      { time: '8:00 – 9:00 AM', title: 'Registration & Check-In', break: true },
+      { time: '9:00 – 9:10 AM', kind: 'Opening Remarks' },
+      { time: '9:10 – 10:00 AM', kind: 'Keynote', title: 'Chris Longhurst – Evidence-based Medicine in the AI Era' },
+      { time: '10:00 – 10:20 AM', kind: 'Invited Talk', title: 'Pang Wei Koh – Reinforcement Learning with Evolving Rubrics' },
+      { time: '10:20 – 10:45 AM', title: 'Coffee Break', break: true },
+      { time: '10:45 – 11:45 AM', kind: 'Poster Session 1', href: 'poster-session' },
+      { time: '11:45 AM – 1:00 PM', kind: 'Sponsor Lunch Talk & Exhibits', title: 'Luca Foschini – Sage Bionetworks' },
+      { time: '1:00 – 1:45 PM', kind: 'Research Roundtables Session 1', href: 'attend/research-roundtables' },
+      { time: '1:45 – 2:15 PM', kind: 'Doctoral Symposium', title: 'Lightning Talks', href: 'submit/doctoral-symposium' },
+      { time: '2:15 – 2:40 PM', title: 'Coffee Break', break: true },
+      { time: '2:40 – 3:00 PM', kind: 'Mental Health Talk', title: 'Tim Althoff – Quantifying Harm: The Frontier of Contextual Safety Evaluation in Mental Health AI' },
+      { time: '3:00 – 3:20 PM', kind: 'Mental Health Talk', title: 'Saadia Gabriel – Multi-Objective Alignment of Language Models for Personalized Psychotherapy' },
+      { time: '3:20 – 3:40 PM', kind: 'Mental Health Talk', title: 'Harini Suresh – Towards Practitioner-Informed Governance for AI in Mental Health' },
+      { time: '3:40 – 4:10 PM', kind: 'Mental Health Panel', title: 'Moderated by Lucy Wang' },
+      { time: '4:15 – 5:15 PM', kind: 'Doctoral Symposium', title: 'Poster Session', href: 'submit/doctoral-symposium' },
+      { time: '5:15 – 5:30 PM', kind: 'Closing Remarks' },
+    ],
+  },
+  {
+    name: 'CHIL Day 2',
+    date: 'Tuesday, June 30',
+    rows: [
+      { time: '8:00 – 9:00 AM', title: 'Registration & Check-In', break: true },
+      { time: '9:00 – 9:10 AM', kind: 'Opening Remarks' },
+      { time: '9:10 – 10:00 AM', kind: 'Keynote', title: 'Jessilyn Dunn – The Digital Physiome: Wearables for Disease Detection and Monitoring' },
+      { time: '10:00 – 10:20 AM', kind: 'Best Paper Talks' },
+      { time: '10:20 – 10:45 AM', title: 'Coffee Break', break: true },
+      { time: '10:45 – 11:30 AM', kind: 'Poster Session 2', href: 'poster-session' },
+      { time: '11:30 AM – 12:45 PM', kind: 'Lunch Break & Sponsor Exhibit' },
+      { time: '1:00 – 1:45 PM', kind: 'Research Roundtables Session 2', href: 'attend/research-roundtables' },
+      { time: '1:45 – 2:35 PM', kind: 'Keynote', title: 'Raj Manrai – Teaching Large Language Models to Reason like Expert Clinicians' },
+      { time: '2:35 – 3:00 PM', title: 'Coffee Break', break: true },
+      { time: '3:00 – 3:15 PM', kind: 'Interactive Translation Talk', title: 'Nikesh Kotecha – Operationalizing AI at Stanford Healthcare: From Data Foundations to Agentic Workflows' },
+      { time: '3:15 – 3:30 PM', kind: 'Interactive Translation Talk', title: 'Jean Feng – AI at an Urban Safety-net Hospital' },
+      { time: '3:30 – 3:45 PM', kind: 'Interactive Translation Talk', title: 'Clara Lin – Escaping Pilot Purgatory: The Operational Realities of Scaling Healthcare AI in a Pediatric Organization' },
+      { time: '3:35 – 4:20 PM', kind: 'Interactive Translation Panel', title: 'Moderated by Samuel Finlayson' },
+      { time: '4:20 – 4:30 PM', kind: 'Closing Remarks' },
+    ],
+  },
+];
+---
+<BaseLayout title="Schedule">
+  <PageBanner title="Schedule" />
+  <section class="section">
+    <div class="wrap prose">
+      <div class="callout">
+        <p><strong>CHIL Unconference: Sunday, June 28*</strong> — see the <a href={url('submit/unconference')}>Unconference schedule</a>.</p>
+        <p>*Approval and RSVP is required to participate in the CHIL Unconference.</p>
+      </div>
+
+      {days.map((d) => (
+        <div class="sched-day" style="margin-top:2.8rem">
+          <div class="sched-daybar"><h2>{d.name}</h2><span class="sched-date">{d.date}</span></div>
+          <table class="sched-table">
+            <tbody>
+              {d.rows.map((r) => {
+                const label = r.kind && <span class="sched-kind">{r.kind}{r.title && ':'}</span>;
+                return (
+                  <tr class:list={{ 'is-break': r.break }}>
+                    <td class="sched-time">{r.time}</td>
+                    <td class="sched-what">
+                      {r.href ? <a href={url(r.href)}>{label}</a> : label}{' '}{r.title}
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

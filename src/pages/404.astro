@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageBanner from '../components/PageBanner.astro';
+import { url } from '../lib/site';
+---
+<BaseLayout title="Page not found">
+  <PageBanner title="Page not found" />
+  <section class="section">
+    <div class="wrap prose" style="text-align:center">
+      <p>Sorry, we couldn't find that page. It may have moved when the site was rebuilt.</p>
+      <div class="btn-row" style="justify-content:center">
+        <a class="btn btn-primary" href={url('')}>Go to the home page</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

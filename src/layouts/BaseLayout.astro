@@ -1,0 +1,47 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import ReviewNotice from '../components/ReviewNotice.astro';
+import { SITE, REVIEW_MODE } from '../lib/site';
+
+interface Props {
+  title: string;
+  description?: string;
+  overlayHeader?: boolean;
+}
+const { title, description = `${SITE.name} — ${SITE.tagline}. ${SITE.dates}, ${SITE.location}.`, overlayHeader = false } = Astro.props;
+
+const fullTitle = title === 'Home' ? `${SITE.shortName} ${SITE.year} · ${SITE.tagline}` : `${title} · ${SITE.shortName} ${SITE.year}`;
+const base = import.meta.env.BASE_URL;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href={`${base}favicon.png`} />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content={new URL(`${base}images/trip/chicago-banner.jpg`, Astro.site).href} />
+    <meta name="theme-color" content="#1573af" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <Header overlay={overlayHeader} />
+    <main id="main">
+      {REVIEW_MODE && <ReviewNotice />}
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

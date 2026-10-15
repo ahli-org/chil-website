@@ -1,0 +1,32 @@
+---
+import { NAV, SITE, url } from '../lib/site';
+const base = import.meta.env.BASE_URL;
+const year = new Date().getFullYear();
+// Attend links follow the header: hidden while the Attend menu is hidden.
+const showAttend = !NAV.find((item) => item.label === 'Attend')?.hidden;
+---
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src={`${base}logos/ahli-logo-white.png`} alt="AHLI" width="200" height="88" loading="lazy" />
+      <p>{SITE.edition} {SITE.tagline}<br />{SITE.dates} · {SITE.location}</p>
+    </div>
+    <div class="footer-col">
+      <h2>Contact</h2>
+      <p><a href={`mailto:${SITE.email}`}>{SITE.email}</a></p>
+      <p><a href={SITE.bluesky.url} target="_blank" rel="noopener noreferrer">Bluesky {SITE.bluesky.handle}</a></p>
+      <p><a href={SITE.x.url} target="_blank" rel="noopener noreferrer">X {SITE.x.handle}</a></p>
+      <p><a href={SITE.youtube} target="_blank" rel="noopener noreferrer">YouTube</a></p>
+    </div>
+    <div class="footer-col">
+      <h2>Conference</h2>
+      <p><a href={url('submit/call-for-papers')}>Call for Papers</a></p>
+      {showAttend && <p><a href={url('attend/schedule')}>Schedule</a></p>}
+      {showAttend && <p><a href={url('attend/plan-your-trip')}>Plan Your Trip</a></p>}
+      <p><a href={url('resources/code-of-conduct')}>Code of Conduct</a></p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© {year} AHLI. All rights reserved.</p>
+  </div>
+</footer>

@@ -1,0 +1,17 @@
+---
+// Pre-launch draft banner — shown on every page via BaseLayout while the site
+// is shared with a small group of reviewers (instructors, students, program
+// committee) to verify their details. Controlled by REVIEW_MODE in
+// src/lib/site.ts; set that to false before public launch.
+import { SITE } from '../lib/site';
+---
+<aside class="review-notice" role="note" aria-label="Draft notice">
+  <p class="review-notice-tag">⚠ Draft — not for public dissemination</p>
+  <p>
+    This is a pre-launch draft of the {SITE.name} {SITE.year} site, shared with
+    a small group of reviewers to verify program materials and personal details
+    before public launch. If you spot anything incorrect — particularly about
+    your own bio, photo, links, day assignment, or affiliation — please email
+    <a href={`mailto:${SITE.email}`}>{SITE.email}</a> so we can fix it.
+  </p>
+</aside>

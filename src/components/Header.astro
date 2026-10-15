@@ -1,0 +1,101 @@
+---
+// Top navigation bar, modelled on the CHIL WordPress theme: logo left, menu
+// centre, gradient Register button right. Overlays the hero on the home page.
+import { NAV, SITE, url, href, isExternal, currentKey } from '../lib/site';
+import type { NavItem } from '../lib/site';
+
+interface Props {
+  overlay?: boolean; // transparent over a hero image (home page)
+}
+const { overlay = false } = Astro.props;
+
+const key = currentKey(Astro.url.pathname);
+const menu = NAV.filter((item) => !item.hidden);
+const base = import.meta.env.BASE_URL;
+
+function isActive(item: NavItem): boolean {
+  if (item.path !== undefined && key === item.path) return true;
+  return !!item.children?.some((c) => c.path === key);
+}
+const ext = (p: string) => (isExternal(p) ? { target: '_blank', rel: 'noopener noreferrer' } : {});
+---
+<header class:list={['site-header', { 'site-header--overlay': overlay }]}>
+  <div class="header-inner">
+    <a class="brand" href={url('')}>
+      <img src={`${base}logos/ahli-logo-white.png`} alt="AHLI — Association for Health Learning and Inference" width="400" height="175" />
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-controls="primaryNav" aria-expanded="false">
+      <span class="nav-toggle-bars" aria-hidden="true"></span>
+      <span class="sr-only">Menu</span>
+    </button>
+
+    <nav class="primary-nav" id="primaryNav" aria-label="Primary">
+      <ul class="menu">
+        {menu.map((item, i) => (
+          <li class:list={['menu-item', { 'has-children': item.children, 'is-active': isActive(item) }]}>
+            {item.path !== undefined
+              ? <a class="menu-link" href={href(item.path)} aria-current={key === item.path ? 'page' : undefined} {...ext(item.path)}>{item.label}</a>
+              : <button class="menu-link" type="button" aria-expanded="false" aria-controls={`sub-${i}`}>{item.label}</button>}
+            {item.children && (
+              <>
+                {item.path !== undefined && (
+                  <button class="sub-toggle" type="button" aria-expanded="false" aria-controls={`sub-${i}`}>
+                    <span class="sr-only">Show {item.label} submenu</span>
+                  </button>
+                )}
+                <ul class="sub-menu" id={`sub-${i}`}>
+                  {item.children.map((c) => (
+                    <li>
+                      <a href={href(c.path)} aria-current={key === c.path ? 'page' : undefined} {...ext(c.path)}>
+                        {c.label}{isExternal(c.path) && <span class="ext" aria-label="(opens in a new tab)">↗</span>}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </>
+            )}
+          </li>
+        ))}
+      </ul>
+      {SITE.registrationOpen && <a class="btn btn-accent nav-register" href={SITE.register} target="_blank" rel="noopener noreferrer">Register</a>}
+    </nav>
+  </div>
+</header>
+
+<script>
+  const nav = document.getElementById('primaryNav');
+  const toggle = document.getElementById('navToggle');
+
+  toggle?.addEventListener('click', () => {
+    const open = !document.body.classList.contains('nav-open');
+    document.body.classList.toggle('nav-open', open);
+    toggle.setAttribute('aria-expanded', String(open));
+  });
+
+  // Dropdowns open on hover (CSS) and on click/tap or keyboard (here).
+  nav?.querySelectorAll<HTMLButtonElement>('button[aria-controls]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const li = btn.closest('.menu-item')!;
+      const open = !li.classList.contains('open');
+      nav.querySelectorAll('.menu-item.open').forEach((o) => {
+        if (o !== li) {
+          o.classList.remove('open');
+          o.querySelectorAll('button[aria-expanded]').forEach((b) => b.setAttribute('aria-expanded', 'false'));
+        }
+      });
+      li.classList.toggle('open', open);
+      li.querySelectorAll('button[aria-expanded]').forEach((b) => b.setAttribute('aria-expanded', String(open)));
+    });
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!nav?.contains(e.target as Node)) nav?.querySelectorAll('.menu-item.open').forEach((o) => o.classList.remove('open'));
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key !== 'Escape') return;
+    nav?.querySelectorAll('.menu-item.open').forEach((o) => o.classList.remove('open'));
+    document.body.classList.remove('nav-open');
+    toggle?.setAttribute('aria-expanded', 'false');
+  });
+</script>

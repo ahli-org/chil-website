@@ -1,0 +1,24 @@
+---
+// Circular headshot with name, role and affiliation.
+import type { Person } from '../data/people';
+interface Props { person: Person; size?: 'md' | 'sm'; role?: string }
+const { person, size = 'md', role } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const initials = person.name.split(' ').filter(Boolean).map((w) => w[0]).slice(0, 2).join('');
+---
+<figure class={`person-ring person-ring--${size}`}>
+  <div class="ring">
+    {person.photo
+      ? <img src={`${base}${person.photo}`} alt="" loading="lazy" width="300" height="300" />
+      : <span class="ring-initials" aria-hidden="true">{initials}</span>}
+  </div>
+  <figcaption>
+    <strong>
+      {person.url
+        ? <a href={person.url} target="_blank" rel="noopener noreferrer">{person.name}</a>
+        : person.name}
+    </strong>
+    {role && <span class="person-role">{role}</span>}
+    {person.affil && <span class="person-affil">{person.affil}</span>}
+  </figcaption>
+</figure>

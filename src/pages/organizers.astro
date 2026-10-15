@@ -1,0 +1,17 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageBanner from '../components/PageBanner.astro';
+import PersonRing from '../components/PersonRing.astro';
+import { ORGANIZERS } from '../data/people';
+---
+<BaseLayout title="Organizers">
+  <PageBanner title="Organizers" />
+  <section class="section">
+    <div class="wrap">
+      <h2 class="section-title">2026 Organizing Committee</h2>
+      <div class="ring-grid">
+        {ORGANIZERS.map((p) => <PersonRing person={p} role={p.role} />)}
+      </div>
+    </div>
+  </section>
+</BaseLayout>

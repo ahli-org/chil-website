@@ -1,0 +1,24 @@
+---
+// Page title band with breadcrumbs, as on the WordPress inner pages.
+import { url, currentKey, sectionFor } from '../lib/site';
+
+interface Props {
+  title: string;
+  section?: string; // breadcrumb parent; defaults to the NAV group of this page
+  lead?: string;
+}
+const key = currentKey(Astro.url.pathname);
+const { title, lead, section = sectionFor(key)?.label } = Astro.props;
+const base = import.meta.env.BASE_URL;
+---
+<header class="page-banner" style={`--banner: url('${base}images/page-banner.jpg')`}>
+  <div class="page-banner-inner">
+    <h1>{title}</h1>
+    {lead && <p class="page-banner-lead">{lead}</p>}
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href={url('')}>Home</a>
+      {section && <><span aria-hidden="true">»</span><span>{section}</span></>}
+      <span aria-hidden="true">»</span><span aria-current="page">{title}</span>
+    </nav>
+  </div>
+</header>

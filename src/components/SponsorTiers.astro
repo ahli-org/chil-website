@@ -1,0 +1,26 @@
+---
+// Sponsor logos grouped by tier. Data lives in src/lib/sponsors.ts.
+import { SPONSOR_TIERS } from '../lib/sponsors';
+import { url } from '../lib/site';
+const base = import.meta.env.BASE_URL;
+---
+<div class="sponsors">
+  {SPONSOR_TIERS.map((t) => (
+    <div class={`sponsor-tier sponsor-tier--${t.tier}`}>
+      <h3 class="sponsor-tier-label">{t.label}</h3>
+      <div class="sponsor-grid">
+        {t.sponsors.length === 0 && (
+          <a class="sponsor-placeholder" href={url('sponsor')}>Your logo here</a>
+        )}
+        {t.sponsors.map((s) => {
+          const img = <img class="sponsor-logo" src={`${base}${s.logo}`} alt={s.name} loading="lazy" />;
+          return (
+            <div class="sponsor-card">
+              {s.url ? <a href={s.url} target="_blank" rel="noopener noreferrer">{img}</a> : img}
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  ))}
+</div>

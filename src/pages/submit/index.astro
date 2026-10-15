@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageBanner from '../../components/PageBanner.astro';
+import { url } from '../../lib/site';
+
+const options = [
+  { title: 'Call for Papers', path: 'submit/call-for-papers', desc: 'Submit 8–10 page archival papers on machine learning for health. Submissions due February 3, 2027.' },
+  { title: 'Doctoral Symposium', path: 'submit/doctoral-symposium', desc: 'PhD students present ongoing or proposed research, receive feedback from senior experts, and join mentorship sessions.' },
+  { title: 'Unconference', path: 'submit/unconference', desc: 'Health AI Builders 2.0 — a full-day, interactive forum on what it actually takes to deploy AI in healthcare.' },
+];
+---
+<BaseLayout title="Submit">
+  <PageBanner title="Submit" />
+  <section class="section">
+    <div class="wrap">
+      <div class="card-grid">
+        {options.map((o) => (
+          <a class="card" href={url(o.path)}>
+            <h2>{o.title}</h2>
+            <p>{o.desc}</p>
+            <span class="card-more">Learn more →</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>

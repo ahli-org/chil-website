@@ -1,0 +1,15 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import PageBanner from '../components/PageBanner.astro';
+
+const { frontmatter } = Astro.props;
+const { title, eyebrow, lead, description } = frontmatter;
+---
+<BaseLayout title={title} description={description}>
+  <PageBanner title={title} section={eyebrow} lead={lead} />
+  <section class="section">
+    <div class="wrap prose">
+      <slot />
+    </div>
+  </section>
+</BaseLayout>
