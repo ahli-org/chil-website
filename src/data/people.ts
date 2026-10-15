@@ -370,13 +370,6 @@ export const UNCONFERENCE_SPEAKERS: UnconfSpeaker[] = [
 // 2026 Organizing Committee (About → Organizers).
 export const ORGANIZERS: Person[] = [
   {
-    "name": "Irene Chen",
-    "affil": "UC Berkeley & UCSF",
-    "role": "General Chair",
-    "url": "https://irenechen.net/",
-    "photo": "people/irene-chen.png"
-  },
-  {
     "name": "Emily Alsentzer",
     "affil": "Stanford U",
     "role": "General Chair",
@@ -384,62 +377,85 @@ export const ORGANIZERS: Person[] = [
     "photo": "people/emily-alsentzer.png"
   },
   {
-    "name": "Sam Finlayson",
-    "affil": "U Washington",
-    "role": "Program Chair",
-    "url": "https://sgfin.github.io/",
-    "photo": "people/sam-finlayson.png"
-  },
-  {
     "name": "Monica Agrawal",
     "affil": "Duke University",
-    "role": "Program Chair",
+    "role": "General Chair",
     "url": "http://monicaagrawal.com",
     "photo": "people/monica-agrawal.png"
   },
   {
-    "name": "Vicky Bikia",
-    "affil": "Stanford U",
+    "name": "Michael Oberst",
+    "role": "Program Chair"
+  },
+  {
+    "name": "Max Xu",
+    "role": "Research Roundtables Chair"
+  },
+  {
+    "name": "David Pellow",
+    "role": "Research Roundtables Chair"
+  },
+  {
+    "name": "Kyle Heuton",
+    "role": "Doctoral Symposium Chair"
+  },
+  {
+    "name": "Nikesh Kotecha",
+    "affil": "Stanford University",
     "role": "Unconference Chair",
-    "url": "https://vicbi.github.io",
-    "photo": "people/vicky-bikia.png"
+    "photo": "people/nikesh-kotecha.png"
   },
   {
-    "name": "Hong Truong",
-    "affil": "Define Ventures",
-    "role": "Unconference Chair",
-    "photo": "people/hong-truong.png"
+    "name": "Connor O’Brian",
+    "role": "Unconference Chair"
   },
   {
-    "name": "Suhana Bedi",
-    "affil": "Stanford U",
-    "role": "Unconference Chair",
-    "photo": "people/suhana-bedi.png"
+    "name": "Brett Beaulieu-Jones",
+    "affil": "U Chicago",
+    "role": "Local Chair",
+    "url": "http://bbjlab.com",
+    "photo": "people/brett-beaulieu-jones.png"
   },
   {
-    "name": "Mjaye Mazwi",
-    "affil": "Seattle Children's",
-    "role": "Research Roundtables Chair",
-    "photo": "people/mjaye-mazwi.png"
+    "name": "Sarah Jabbour",
+    "role": "Local Chair (Support)"
   },
   {
-    "name": "Aishwarya Mandyam",
-    "affil": "Stanford U",
-    "role": "Research Roundtables Chair",
-    "photo": "people/aishwarya-mandyam.png"
+    "name": "Amin Adibi",
+    "affil": "University of British Columbia",
+    "role": "Comms Chair",
+    "url": "https://www.adibi.ca/",
+    "photo": "people/amin-adibi.png"
   },
   {
-    "name": "Emma Rocheteau",
-    "affil": "U Cambridge",
-    "role": "Doctoral Symposium Chair",
-    "photo": "people/emma-rocheteau.png"
+    "name": "Frances Dean",
+    "role": "Comms Chair"
   },
   {
-    "name": "Matt Engelhard",
-    "affil": "Duke University",
-    "role": "Doctoral Symposium Chair",
-    "url": "https://biostat.duke.edu/engelhard-lab",
-    "photo": "people/matt-engelhard.png"
+    "name": "Kai Wang",
+    "affil": "Georgia Tech",
+    "role": "Fundraising Chair (Advisory)",
+    "url": "https://guaguakai.com/",
+    "photo": "people/kai-wang.png"
+  },
+  {
+    "name": "Olawale (Wale) Salaudeen",
+    "role": "Fundraising Chair"
+  },
+  {
+    "name": "Elizabeth Healey",
+    "affil": "Boston Children's",
+    "role": "Review Chair (Advisory)",
+    "url": "https://elizabethhealey.com/",
+    "photo": "people/elizabeth-healey.png"
+  },
+  {
+    "name": "Nitya Thakkar",
+    "role": "Review Chair"
+  },
+  {
+    "name": "Simon Lee",
+    "role": "Review Chair"
   },
   {
     "name": "Tom Pollard",
@@ -448,83 +464,21 @@ export const ORGANIZERS: Person[] = [
     "photo": "people/tom-pollard.png"
   },
   {
-    "name": "Elizabeth Healey",
-    "affil": "Boston Children's",
-    "role": "Proceedings Chair",
-    "url": "https://elizabethhealey.com/",
-    "photo": "people/elizabeth-healey.png"
-  },
-  {
-    "name": "Jason A. Fries",
-    "affil": "Stanford U",
-    "role": "Proceedings Chair",
-    "photo": "people/jason-a-fries.png"
-  },
-  {
     "name": "Tom Hartvigsen",
     "affil": "U Virginia",
-    "role": "Track 1 Chair",
+    "role": "Senior Area Chair",
     "url": "https://www.tomhartvigsen.com/",
     "photo": "people/tom-hartvigsen.png"
   },
   {
-    "name": "Shengpu Tang",
-    "affil": "Emory University",
-    "role": "Track 2 Chair",
-    "url": "https://shengpu-tang.me/",
-    "photo": "people/shengpu-tang.png"
-  },
-  {
     "name": "Anna Zink",
     "affil": "Tufts University",
-    "role": "Track 3 Chair",
+    "role": "Senior Area Chair",
     "url": "https://zinka88.github.io/",
     "photo": "people/anna-zink.png"
   },
   {
-    "name": "Kai Wang",
-    "affil": "Georgia Tech",
-    "role": "Fundraising Chair",
-    "url": "https://guaguakai.com/",
-    "photo": "people/kai-wang.png"
-  },
-  {
-    "name": "Brett Beaulieu-Jones",
-    "affil": "U Chicago",
-    "role": "Fundraising Chair",
-    "url": "http://bbjlab.com",
-    "photo": "people/brett-beaulieu-jones.png"
-  },
-  {
-    "name": "Ben Glicksberg",
-    "affil": "Mt. Sinai",
-    "role": "Fundraising Chair",
-    "url": "http://www.glicksberglab.com",
-    "photo": "people/ben-glicksberg.png"
-  },
-  {
-    "name": "Xinyang Han",
-    "affil": "UC Berkeley",
-    "role": "Comms Chair",
-    "url": "https://scholar.google.com/citations?user=HjmxmJoAAAAJ&hl=en",
-    "photo": "people/xinyang-han.png"
-  },
-  {
-    "name": "Feng Chen",
-    "affil": "U Washington",
-    "role": "Local Logistics Chair",
-    "photo": "people/feng-chen.png"
-  },
-  {
-    "name": "Daseyra Fontalvo",
-    "affil": "AHLI",
-    "role": "Conference Coordinator",
-    "photo": "people/daseyra-fontalvo.png"
-  },
-  {
-    "name": "Tasmie Sarker",
-    "affil": "AHLI",
-    "role": "Executive Director",
-    "photo": "people/tasmie-sarker.png"
+    "name": "Bill La Cava",
+    "role": "Senior Area Chair"
   }
 ];
