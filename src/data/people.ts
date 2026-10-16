@@ -371,7 +371,7 @@ export const UNCONFERENCE_SPEAKERS: UnconfSpeaker[] = [
 export const ORGANIZERS: Person[] = [
   {
     "name": "Emily Alsentzer",
-    "affil": "Stanford U",
+    "affil": "Stanford University",
     "role": "General Chair",
     "url": "https://emilyalsentzer.com/",
     "photo": "people/88c49cff30.png"
@@ -384,37 +384,38 @@ export const ORGANIZERS: Person[] = [
     "photo": "people/8797e87b1f.png"
   },
   {
+    "name": "Bill La Cava",
+    "affil": "Boston Children's",
+    "role": "Senior Area Chair"
+  },
+  {
+    "name": "Tom Pollard",
+    "affil": "MIT",
+    "role": "Proceedings Chair",
+    "photo": "people/6d7bed0a7f.png"
+  },
+  {
+    "name": "Tom Hartvigsen",
+    "affil": "University of Virginia",
+    "role": "Senior Area Chair",
+    "url": "https://www.tomhartvigsen.com/",
+    "photo": "people/df9bfd9864.png"
+  },
+  {
+    "name": "Anna Zink",
+    "affil": "Tufts University",
+    "role": "Senior Area Chair",
+    "url": "https://zinka88.github.io/",
+    "photo": "people/a74d0bd542.png"
+  },
+  {
     "name": "Michael Oberst",
-    "affil": "Johns Hopkins U",
+    "affil": "Johns Hopkins University",
     "role": "Program Chair"
   },
   {
-    "name": "Max Xu",
-    "role": "Research Roundtables Chair"
-  },
-  {
-    "name": "David Pellow",
-    "affil": "U Toronto",
-    "role": "Research Roundtables Chair"
-  },
-  {
-    "name": "Kyle Heuton",
-    "affil": "Harvard U",
-    "role": "Doctoral Symposium Chair"
-  },
-  {
-    "name": "Nikesh Kotecha",
-    "affil": "Stanford University",
-    "role": "Unconference Chair",
-    "photo": "people/e22f4ddbfc.png"
-  },
-  {
-    "name": "Connor O’Brian",
-    "role": "Unconference Chair"
-  },
-  {
     "name": "Brett Beaulieu-Jones",
-    "affil": "U Chicago",
+    "affil": "University of Chicago",
     "role": "Local Chair",
     "url": "http://bbjlab.com",
     "photo": "people/e78ed45123.png"
@@ -457,7 +458,7 @@ export const ORGANIZERS: Person[] = [
   },
   {
     "name": "Nitya Thakkar",
-    "affil": "Stanford U",
+    "affil": "Stanford University",
     "role": "Review Chair"
   },
   {
@@ -466,28 +467,27 @@ export const ORGANIZERS: Person[] = [
     "role": "Review Chair"
   },
   {
-    "name": "Tom Pollard",
-    "affil": "MIT",
-    "role": "Proceedings Chair",
-    "photo": "people/6d7bed0a7f.png"
+    "name": "Max Xu",
+    "role": "Research Roundtables Chair"
   },
   {
-    "name": "Tom Hartvigsen",
-    "affil": "U Virginia",
-    "role": "Senior Area Chair",
-    "url": "https://www.tomhartvigsen.com/",
-    "photo": "people/df9bfd9864.png"
+    "name": "David Pellow",
+    "affil": "University of Toronto",
+    "role": "Research Roundtables Chair"
   },
   {
-    "name": "Anna Zink",
-    "affil": "Tufts University",
-    "role": "Senior Area Chair",
-    "url": "https://zinka88.github.io/",
-    "photo": "people/a74d0bd542.png"
+    "name": "Kyle Heuton",
+    "affil": "Harvard University",
+    "role": "Doctoral Symposium Chair"
   },
   {
-    "name": "Bill La Cava",
-    "affil": "Boston Children's",
-    "role": "Senior Area Chair"
+    "name": "Nikesh Kotecha",
+    "affil": "Stanford University",
+    "role": "Unconference Chair",
+    "photo": "people/e22f4ddbfc.png"
+  },
+  {
+    "name": "Connor O’Brian",
+    "role": "Unconference Chair"
   }
 ];
