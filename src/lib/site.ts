@@ -50,11 +50,6 @@ export const SITE = {
   youtube: 'https://www.youtube.com/@ahli_cc',
   bluesky: { handle: '@ahli-cc.bsky.social', url: 'https://bsky.app/profile/ahli-cc.bsky.social' },
   x: { handle: '@CHILconference', url: 'https://x.com/chilconference' },
-  stats: [
-    { value: '15+', label: 'Speakers' },
-    { value: '200+', label: 'Attendees' },
-    { value: '$20K', label: 'in Travel Grants' },
-  ],
 };
 
 // `path` is a site path ('' = home) or an absolute URL (opens in a new tab).

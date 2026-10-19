@@ -226,16 +226,6 @@ body.nav-open .nav-toggle-bars::after  { top: 0; transform: rotate(-45deg); }
 .about-loc { font-size: 1.25rem; font-weight: 600; margin: .4rem 0 1.2rem; color: var(--ink-soft); }
 .about-venue { color: var(--primary-ink); font-size: .95rem; line-height: 1.7; margin-bottom: 1.2rem; }
 .about-contact { font-size: 1.05rem; }
-.stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 2rem; }
-.stat {
-  text-align: center; padding: 1.1rem .5rem; border-radius: 10px;
-  background: linear-gradient(180deg, #fff, #eef0f3); box-shadow: var(--shadow-sm);
-}
-.stat strong {
-  display: block; font-family: var(--head); font-weight: 800; font-size: 1.9rem; line-height: 1.1;
-  background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent;
-}
-.stat span { font-size: .88rem; color: var(--ink-soft); }
 
 /* Highlight cards (Unconference / Doctoral Symposium) */
 .highlights { display: grid; grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); gap: 1.6rem; }
@@ -464,8 +454,6 @@ details.talk-more[open] summary { margin-bottom: .6rem; }
   .footer-brand { grid-column: 1 / -1; }
 }
 @media (max-width: 30rem) {
-  .stats { gap: .6rem; }
-  .stat strong { font-size: 1.5rem; }
   .newsletter { padding: 1.6rem; }
 }
 @media (prefers-reduced-motion: reduce) {
