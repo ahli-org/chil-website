@@ -40,7 +40,7 @@ Account approval can take up to two weeks, so please register by January 15 to e
 
 ### Length and Formatting
 
-Submitted papers must be 8-10 pages (including all figures and tables); an Overleaf template will be available by November 15th. Unlimited additional pages can be used for references and additional supplementary materials (e.g. appendices). Reviewers will not be required to read the supplementary materials.
+Submitted papers must be 8-10 pages (including all figures and tables); an Overleaf template is available [here](https://www.overleaf.com/latex/templates/chil-2027-template/kpsjhfpkbrnp). Unlimited additional pages can be used for references and additional supplementary materials (e.g. appendices). Reviewers will not be required to read the supplementary materials.
 
 ### Double Blind Peer Review Policy
 
