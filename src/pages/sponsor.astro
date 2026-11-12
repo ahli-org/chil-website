@@ -167,25 +167,6 @@ const addOns = [
   },
 ];
 
-// Bundled packages that fund multiple AHLI events.
-const bundles = [
-  {
-    title: 'Diamond and Gold Multi-Event Package',
-    sub: ['$25,000 for 2 conferences', 'Approx. 15% discount with $30,000 value'],
-  },
-  {
-    title: 'Silver Multi-Event Discount Package',
-    sub: ['$16,000 for 4 conferences', '20% discount with $20,000 value'],
-  },
-  {
-    title: 'Gold BOGO 50% Package',
-    sub: ['$15,000 for 2 conferences', '25% discount with $20,000 value', 'Buy One Get One 50% Off'],
-  },
-  {
-    title: 'A La Carte &amp; Custom Package',
-    sub: ['15% discount with flexible, tailored options combining elements from other packages'],
-  },
-];
 ---
 <BaseLayout title="Sponsor">
   <PageBanner
@@ -263,25 +244,6 @@ const bundles = [
     </div>
   </section>
 
-  <section class="section">
-    <div class="wrap">
-      <h2>Bundled Packages</h2>
-      <p class="intro">We have additional bundled packages to fund multiple AHLI events.</p>
-      <ul class="addon-list">
-        {bundles.map((b) => (
-          <li>
-            <span set:html={b.title}></span>
-            {b.sub.length > 0 && (
-              <ul>
-                {b.sub.map((s) => <li set:html={s}></li>)}
-              </ul>
-            )}
-          </li>
-        ))}
-      </ul>
-    </div>
-  </section>
-
   {HAS_SPONSORS && (
     <section class="section section--grey">
       <div class="wrap">
@@ -295,8 +257,7 @@ const bundles = [
     <div class="wrap prose">
       <div class="callout">
         <p>
-          Ready to support {SITE.name}, or have questions about tiers, add-ons, and
-          bundled packages? Email us at
+          Ready to support {SITE.name}, or have questions about tiers and add-ons? Email us at
           <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.
         </p>
       </div>
@@ -397,7 +358,7 @@ const bundles = [
   .tier-group li { margin-bottom: 0.35rem; }
   .tier-group li:last-child { margin-bottom: 0; }
 
-  /* Add-ons & bundled packages: bold labels with indented sub-details. */
+  /* Add-ons: bold labels with indented sub-details. */
   .addon-list { list-style: none; margin: 1.2rem 0 0; padding: 0; }
   .addon-list > li {
     padding: 0.9rem 0;
