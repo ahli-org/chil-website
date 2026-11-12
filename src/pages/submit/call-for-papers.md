@@ -90,10 +90,11 @@ Every submission must nominate one co-author of the submission to serve as its r
 Nominated reviewers must be a first or last author on at least one prior archival publication at a comparable peer-reviewed venue (e.g. a ML for health conference or journal, or a health-focused paper at an ML venue). Below is a list of qualifying venues:
 
 - **Machine learning for biomedicine:** CHIL, ML4H Proceedings, MLHC Proceedings, MICCAI, PSB, ISMB, MIDL
-- **Statistics:** JASA, Biostatistics
+- **Statistics:** JASA, Biostatistics, Statistics in Medicine
 - **Core machine learning:** NeurIPS, ICML, ICLR, AISTATS, UAI, TMLR, JMLR, AAAI, IJCAI, KDD, ACL, EMNLP, NAACL, ACM FAccT, CVPR, ECCV, COLM, Nature Machine Intelligence
-- **Informatics:** AMIA Annual Symposium, JAMIA, JAMIA Open, Journal of Biomedical Informatics
-- **Clinical:** Nature Medicine, The Lancet Digital Health, NEJM AI, PLOS Digital Health, npj Digital Medicine, JAMA, JAMA Network Open
+- **Informatics:** AMIA Annual Symposium, JAMIA, JAMIA Open, Journal of Biomedical Informatics, Journal of Medical Internet Research, JMIR AI
+- **Clinical:** NEJM, The Lancet, JAMA, Annals of Internal Medicine, JAMA Internal Medicine, Nature Medicine, The Lancet Digital Health, NEJM AI, PLOS Digital Health, npj Digital Medicine, JAMA Network Open, and the top three venues in each medical specialty subcategory listed on [Google Scholar](https://scholar.google.com/citations?view_op=top_venues&hl=en&vq=med)
+- **Multidisciplinary:** Nature Communications, Science Advances, PNAS
 
 If you believe a venue not listed here should qualify, submit a request through a form (coming soon!) with the venue name at least one week before the submission deadline.
 
