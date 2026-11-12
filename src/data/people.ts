@@ -4,7 +4,6 @@
 export type Person = { name: string; affil?: string; photo?: string; url?: string; role?: string };
 export type Talk = Person & { title?: string; role?: string; abstract?: string[]; bio?: string[] };
 export type Session = { title: string; talks: Talk[] };
-export type UnconfSpeaker = Person & { bio: string[] };
 
 // Speakers & panelists shown on the home page.
 export const FEATURED_SPEAKERS: Person[] = [
@@ -268,101 +267,6 @@ export const SPEAKER_SESSIONS: Session[] = [
           "Dr. Clara Lin is the Chief Medical Information Officer (CMIO) and VP of Digital Health and Informatics at Seattle Children’s, where she leads organizational growth through informatics and innovation. Board certified in Internal Medicine, Pediatrics, and Clinical Informatics, she possesses a unique perspective on the intersection of technology and patient care. In her current role, Dr. Lin facilitates the organization’s clinical and operational AI portfolio and co-chairs the Artificial Intelligence Review Board (AIRB). Her mission is to leverage technology to improve quality of care and clinician wellness. Outside of her leadership at the hospital, she serves as a Clinical Associate Professor in the Department of Pediatrics and Affiliate Associate Professor in the Department of Biomedical Informatics and Medical Education (BIME) at the University of Washington."
         ]
       }
-    ]
-  }
-];
-
-// Unconference speakers (Program → Unconference).
-export const UNCONFERENCE_SPEAKERS: UnconfSpeaker[] = [
-  {
-    "name": "Bradd Busick",
-    "photo": "people/eb5840d419.png",
-    "bio": [
-      "Bradd Busick is Principal, AI, Data & Technology Enablement at Frazier Healthcare Partners, where he focuses on integrating artificial intelligence across the investment lifecycle. He joined Frazier in 2026 after serving as Senior Vice President and Chief Information Officer at MultiCare Health System, where he led enterprise-wide digital transformation including Epic optimization, Workday ERP migration, and cloud infrastructure buildout. He received the 2023 Healthcare ORBIE award from SeattleCIO and brings more than 20 years of experience across finance, aerospace, retail, philanthropy, and healthcare, including prior roles at the Bill & Melinda Gates Foundation and MacDonald-Miller."
-    ]
-  },
-  {
-    "name": "Chris Carruthers",
-    "photo": "people/6af9e111d6.png",
-    "bio": [
-      "Chris Carruthers is Chief Innovation Officer at DexCare, where he leads the Customer Solutions Architecture Team and helps bridge customer business needs with the DexCare platform. He brings more than two decades of experience across enterprise IT systems, software development, business consulting, and entrepreneurship. Prior to DexCare's spin-out, he worked at Providence St. Joseph commercializing the technology that became DexCare, and earlier led enterprise digital delivery teams at Slalom Consulting and his own consulting firm, Carhea Technologies."
-    ]
-  },
-  {
-    "name": "Andy Chu",
-    "photo": "people/ad06c6f8b2.png",
-    "bio": [
-      "Andy Chu serves as Senior Vice President of AI and Technology at Chartis, where he leads a multidisciplinary team of product managers, engineers, data scientists, and designers building technology-forward solutions for health systems and payers. He previously served as Chief Product and Technology Officer at Providence's Digital Innovation Group, where he led the incubation of companies including Circle, Xealth, DexCare, and Praia Health. Before healthcare, he held senior leadership roles at Microsoft and other high-growth technology companies. He holds a B.S. in Electrical Engineering from the University of Virginia."
-    ]
-  },
-  {
-    "name": "Michael Han",
-    "photo": "people/77c56305b1.png",
-    "bio": [
-      "Michael Han, MD, MBA serves as Chief Medical Officer at Ambience Healthcare, the leading AI platform for clinical documentation and revenue integrity. He brings over two decades of experience spanning clinical practice, physician leadership, and health IT, most recently as Enterprise CMIO at MultiCare Health System. Board-certified in both urology and clinical informatics, he received his MD from the University of Michigan and his MBA from the Wharton School of the University of Pennsylvania."
-    ]
-  },
-  {
-    "name": "Ragan Hart",
-    "photo": "people/e7eaf9639f.png",
-    "bio": [
-      "Ragan Hart, Ph.D., is Senior Associate for Strategic Investments at Washington Research Foundation, where she focuses on investments in life sciences and healthtech. She joined WRF from MultiCare Capital Partners, the strategic investment arm of MultiCare Health System, where she focused on healthtech and AI/ML. She co-founded MDisrupt to connect companies with life-sciences experts to accelerate the development and clinical validation of healthcare products. She holds a doctorate in public health genetics with a concentration in health economics from the University of Washington and was a postdoctoral scholar at Stanford's Department of Biomedical Data Science."
-    ]
-  },
-  {
-    "name": "Martin Kang",
-    "photo": "people/3fc9633f25.png",
-    "bio": [
-      "Martin Kang, MD is a Seattle-based physician and Senior Director of AI Product Management at Danaher Corporation, working at the intersection of digital health, AI, and medical innovation. He earned his medical degree from the Icahn School of Medicine at Mount Sinai and focuses on applying AI and emerging technologies to advance medical research and clinical practice."
-    ]
-  },
-  {
-    "name": "Nikesh Kotecha",
-    "photo": "people/e22f4ddbfc.png",
-    "bio": [
-      "Nikesh Kotecha, Ph.D is a senior leader in biomedical informatics and a seasoned entrepreneur driving innovation in cancer immunotherapy. As Vice President of Informatics at the Parker Institute for Cancer Immunotherapy (PICI), he spearheads the integration of computational and molecular technologies to accelerate the development of transformative immune-based treatments. He co-founded Cytobank Inc., a pioneering company in single-cell proteomics and cytometry analytics. Dr. Kotecha holds a Ph.D. in Biomedical Informatics from Stanford University and a B.S. in Biomedical Engineering from Boston University. His career spans roles in engineering, business development, and technical leadership at organizations including TIBCO Spotfire and Pfizer."
-    ]
-  },
-  {
-    "name": "Ryan McRobert",
-    "photo": "people/7d9f52ca5e.png",
-    "bio": [
-      "Ryan McRobert is a Partner at Fenwick & West, where he provides strategic counsel to public and private technology and life sciences companies, including digital health and AI healthcare-related companies. He advises clients ranging from early-stage startups to mature public companies and hosts office hours for CoMotion Labs cohort companies at the University of Washington. He holds a B.A. from the University of Washington."
-    ]
-  },
-  {
-    "name": "Jay Nanduri",
-    "photo": "people/b1334b6452.png",
-    "bio": [
-      "Jay Nanduri is co-founder and Chief Technology Officer of Truveta, where he leads engineering, AI/ML, security, privacy, and compliance for the company's health data platform. He spent more than two decades at Microsoft, culminating as a Technical Fellow and Corporate Vice President leading engineering for fraud protection, financial services, and supply chain, and earlier serving as GM of Bing Mobile Engineering. He holds an MBA from The Wharton School, an M.Tech from the National Institute of Technology Warangal, and a B.E. from Osmania University."
-    ]
-  },
-  {
-    "name": "Neha Patadia",
-    "photo": "people/752fef5477.png",
-    "bio": [
-      "Neha Patadia is Founding Head of Partnerships and Growth at FounderNexus, based in Kirkland, Washington. She is the founder of SeaHealthTech, the community-led healthtech organization connecting founders, investors, clinicians, and technologists across Seattle and the Pacific Northwest, and also the founder of AIHealthTech, a boutique advisory firm supporting health tech companies on strategy, sales, and data infrastructure. Earlier in her career, she served as Director of Data and Analytics at SeniorLink. She holds an M.S. in Health Informatics & Policy from Weill Cornell Medical College."
-    ]
-  },
-  {
-    "name": "Arun Ravi",
-    "photo": "people/2142769c00.png",
-    "bio": [
-      "Arun Ravi is Seniorf Director, Health AI at Microsoft, where he oversees first-party Microsoft products, product marketing, portfolio planning, and platform commercialization strategy on the Health and Life Sciences Platform & AI team. He has been deeply involved in the development of DAX and DAX Copilot. Before Microsoft, he was part of the founding team at AWS Health AI, where he helped launch Amazon Comprehend Medical, Amazon HealthLake, and Amazon Transcribe Medical. Earlier, he was co-founder and CEO of Mevoked, a behavioral health company acquired by WellBrain in 2017."
-    ]
-  },
-  {
-    "name": "Corinne Stroum",
-    "photo": "people/62decd759f.png",
-    "bio": [
-      "Corinne Stroum is Head of Emerging Technology at SCAN, where she leads cross-functional teams focused on improving experiences for older adults. She brings a decade of product and program leadership in healthcare analytics and machine learning, with prior roles at Advata, KenSci, Caradigm, and Microsoft. Earlier in her career, she worked in clinical and biomedical engineering roles, including as a clinical technician for intra-aortic balloon pumps and a systems validation engineer for PET/CT scanners. She holds a B.S. in Biomedical and Electrical Engineering from Washington University in St. Louis and an M.S. in Engineering & Technology Innovation Management from Carnegie Mellon University."
-    ]
-  },
-  {
-    "name": "Hong Truong",
-    "photo": "people/9a5bfcf24c.png",
-    "bio": [
-      "Hong Truong is a Principal at Define Ventures, an early-stage healthcare-focused venture fund. Her career spans the intersection of healthcare, venture capital, and entrepreneurship, with prior roles at California Health Care Foundation, Summation Health Ventures (Cedars-Sinai and MemorialCare), Kaiser Permanente Ventures, and Analysis Group. She holds a B.A. and B.S. from Brown University and an MPH in Health Management from the Yale School of Public Health."
     ]
   }
 ];

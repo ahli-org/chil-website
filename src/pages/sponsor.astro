@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PageBanner from '../components/PageBanner.astro';
 import SponsorTiers from '../components/SponsorTiers.astro';
+import { HAS_SPONSORS } from '../lib/sponsors';
 import { SITE } from '../lib/site';
 
 // Principles for a transparent and appropriate relationship with funders.
@@ -17,11 +18,12 @@ const principles = [
 // rendered with set:html, so keep the markup here trusted/static.
 const levels = [
   {
-    tier: 'diamond',
-    name: 'Diamond Sponsor',
-    price: '$20,000 USD',
+    tier: 'platinum',
+    name: 'Platinum Sponsor',
+    isNew: true,
+    price: '$30,000 USD',
     slots: 'Two (2) slots available',
-    reg: 'Free registration for up to <strong>10</strong> representatives from your organization',
+    reg: 'Free registration for up to <strong>12</strong> representatives from your organization',
     groups: [
       {
         label: 'Branding',
@@ -34,7 +36,49 @@ const levels = [
       {
         label: 'Presentation and Exhibits',
         items: [
-          "Present a <strong>20-minute lunch talk</strong> on company's work in machine learning and health research or development or lead a 45-minute research roundtable",
+          "Present a <strong>20-minute lunch talk</strong> on company's work in machine learning and health research or development <strong>and</strong> lead a 45-minute research roundtable",
+          'Dedicated <strong>booth</strong> (6 ft table or equivalent) throughout the conference',
+        ],
+      },
+      {
+        label: 'Verbal Recognitions',
+        items: [
+          '<strong>Exclusive acknowledgment</strong> to attendees before start of lunch break',
+          '<strong>Verbal acknowledgment</strong> of contribution in the opening and closing remarks of the conference and before lunch break',
+        ],
+      },
+      {
+        label: 'Travel Award Recognition',
+        items: ['<strong>Additional recognition</strong> at the conference and on CHIL website to fund student travel'],
+      },
+      {
+        label: 'Access to Talent',
+        items: [
+          'Access to attendee <strong>information</strong> such as name, email, job title, of those who opt-in for career opportunities',
+          'Free posting on AHLI job board for one year',
+        ],
+      },
+    ],
+  },
+  {
+    tier: 'diamond',
+    name: 'Diamond Sponsor',
+    price: '$20,000 USD',
+    slots: 'Three (3) slots available',
+    reg: 'Free registration for up to <strong>8</strong> representatives from your organization',
+    groups: [
+      {
+        label: 'Branding',
+        items: [
+          'Company name listed as <strong>&ldquo;CHIL presented by [company]&rdquo;</strong> on website header',
+          'Primary placement of company logo on name badges',
+          'Company logo displayed on website and promotional materials',
+        ],
+      },
+      {
+        label: 'Presentation and Exhibits',
+        items: [
+          "Present a <strong>10-minute lunch talk</strong> on company's work in machine learning and health research or development <strong>or</strong> lead a 45-minute research roundtable",
           'Dedicated <strong>booth</strong> (6 ft table or equivalent) throughout the conference',
         ],
       },
@@ -58,8 +102,8 @@ const levels = [
     tier: 'gold',
     name: 'Gold Sponsor',
     price: '$10,000 USD',
-    slots: 'Five (5) slots available',
-    reg: 'Free registration for up to <strong>5</strong> representatives from your organization',
+    slots: 'Three (3) slots available',
+    reg: 'Free registration for up to <strong>4</strong> representatives from your organization',
     groups: [
       {
         label: 'Branding',
@@ -72,13 +116,6 @@ const levels = [
       {
         label: 'Verbal Recognitions',
         items: ['<strong>Verbal acknowledgment</strong> of contribution in the opening and closing remarks of the conference'],
-      },
-      {
-        label: 'Access to Talent',
-        items: [
-          'Access to attendee <strong>information</strong> such as name, email, job title, of those who opt-in for career opportunities',
-          'Free posting on AHLI job board for one year',
-        ],
       },
     ],
   },
@@ -97,13 +134,6 @@ const levels = [
         label: 'Verbal Recognition',
         items: ['<strong>Verbal acknowledgment</strong> of contribution in the opening and closing remarks of the conference'],
       },
-      {
-        label: 'Access to Talent',
-        items: [
-          'Access to attendee <strong>information</strong> such as name, email, job title, of those who opt-in for career opportunities',
-          'Free posting on AHLI job board for one year',
-        ],
-      },
     ],
   },
   {
@@ -117,30 +147,23 @@ const levels = [
         label: 'Branding',
         items: ['Company logo displayed on website and promotional materials'],
       },
-      {
-        label: 'Access to Talent',
-        items: ['Free posting on AHLI job board for one year'],
-      },
     ],
   },
 ];
 
-// Add-ons available to Silver-and-above sponsors.
+// Add-ons available to Gold-and-above sponsors.
 const addOns = [
   {
     title: 'Research Roundtable (5 slots): <strong>+$2,500</strong>',
     sub: ['1&ndash;2 representative(s) at the roundtable', 'Roundtable topic is subject to approval'],
   },
-  { title: 'Networking Social (3 slots): <strong>+$3,500</strong>', sub: [] },
   {
-    title: 'Best Paper Award (4 slots): <strong>+$500</strong>',
-    sub: ['$2k for exclusive paper award sponsor', 'Acknowledgement at presentation'],
+    title: 'Travel Awards (unlimited slots): <strong>+$1,000 each</strong>',
+    sub: ['Sponsor author travel', 'Additional recognition at conference and on website'],
   },
-  { title: 'Best Demo Award (1 slot): <strong>+$500</strong>', sub: ['Acknowledgement at presentation'] },
-  { title: 'Best Reviewer Award (1 slot): <strong>+$150</strong>', sub: ['Acknowledgement at presentation'] },
   {
-    title: 'Travel Awards (unlimited slots): <strong>+$500 each</strong>',
-    sub: ['$12k for exclusive travel award sponsor', 'Sponsor author travel'],
+    title: 'Best Paper Award (4 slots): <strong>+$1,250</strong>',
+    sub: ['$5k for exclusive paper award sponsor', 'Acknowledgement at presentation'],
   },
 ];
 
@@ -201,7 +224,7 @@ const bundles = [
         {levels.map((lvl) => (
           <article class={`tier-card tier-card--${lvl.tier}`}>
             <header class="tier-head">
-              <p class="tier-name">{lvl.name}</p>
+              <p class="tier-name">{lvl.name}{lvl.isNew && <span class="tier-new">New</span>}</p>
               <p class="tier-price">{lvl.price}</p>
               <p class="tier-slots">{lvl.slots}</p>
             </header>
@@ -224,7 +247,7 @@ const bundles = [
 
   <section class="section">
     <div class="wrap">
-      <h2>Add-Ons &mdash; for Silver and Above</h2>
+      <h2>Add-Ons &mdash; for Gold and Above</h2>
       <ul class="addon-list">
         {addOns.map((a) => (
           <li>
@@ -259,12 +282,14 @@ const bundles = [
     </div>
   </section>
 
-  <section class="section section--grey">
-    <div class="wrap">
-      <h2 class="section-title">{SITE.year} Sponsors</h2>
-      <SponsorTiers />
-    </div>
-  </section>
+  {HAS_SPONSORS && (
+    <section class="section section--grey">
+      <div class="wrap">
+        <h2 class="section-title">{SITE.year} Sponsors</h2>
+        <SponsorTiers />
+      </div>
+    </section>
+  )}
 
   <section class="section">
     <div class="wrap prose">
@@ -304,6 +329,7 @@ const bundles = [
     padding: 1.4rem 1.6rem 1.2rem;
     border-bottom: 1px solid var(--line);
   }
+  .tier-card--platinum .tier-head { background: #ece9f6; border-bottom-color: #c9c2e3; }
   .tier-card--diamond .tier-head { background: #e8f0ff; border-bottom-color: #c5d0f0; }
   .tier-card--gold    .tier-head { background: #fff8e0; border-bottom-color: #e0ce88; }
   .tier-card--silver  .tier-head { background: #f3f4f7; }
@@ -314,6 +340,20 @@ const bundles = [
     font-weight: 600;
     color: var(--ink);
     margin: 0;
+  }
+  .tier-new {
+    display: inline-block;
+    margin-left: 0.5rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 999px;
+    background: var(--primary-ink);
+    color: #fff;
+    font-family: var(--body);
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    vertical-align: middle;
   }
   .tier-price {
     font-family: var(--head);

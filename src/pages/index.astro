@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import SponsorTiers from '../components/SponsorTiers.astro';
+import { HAS_SPONSORS } from '../lib/sponsors';
 import PersonRing from '../components/PersonRing.astro';
 import Gallery from '../components/Gallery.astro';
 import { FEATURED_SPEAKERS } from '../data/people';
@@ -124,8 +125,14 @@ const highlights = allHighlights.filter((h) => h.show);
 
   <section class="section" style="padding-top:1rem">
     <div class="wrap">
-      <SponsorTiers />
-      <p style="text-align:center"><a href={url('sponsor')}>Become a sponsor →</a></p>
+      {HAS_SPONSORS ? (
+        <>
+          <SponsorTiers />
+          <p style="text-align:center"><a href={url('sponsor')}>Become a sponsor →</a></p>
+        </>
+      ) : (
+        <p style="text-align:center">Interested in supporting {SITE.name}? <a href={url('sponsor')}>Become a sponsor →</a></p>
+      )}
     </div>
   </section>
 </BaseLayout>

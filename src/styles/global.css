@@ -310,19 +310,14 @@ body.nav-open .nav-toggle-bars::after  { top: 0; transform: rotate(-45deg); }
   text-transform: uppercase; color: var(--ink-faint); margin-bottom: 1.2rem;
 }
 .sponsor-grid { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 1rem 3rem; }
+.sponsor-tier--platinum .sponsor-grid,
 .sponsor-tier--diamond .sponsor-grid { gap: 1.5rem 4rem; }
-/* Silver/bronze logos are padded squares (as uploaded to WordPress); diamond are wide. */
+/* Gold/silver/startup logos are padded squares (as uploaded to WordPress); platinum/diamond are wide. */
 .sponsor-logo { height: 8.5rem; width: auto; max-width: 8.5rem; object-fit: contain; }
+.sponsor-tier--platinum .sponsor-logo { height: 5.6rem; max-width: 24rem; }
 .sponsor-tier--diamond .sponsor-logo { height: 4.8rem; max-width: 22rem; }
-.sponsor-tier--bronze .sponsor-logo { height: 7.5rem; max-width: 7.5rem; }
-/* Shown in a tier until its first sponsor is added. */
-.sponsor-placeholder {
-  display: flex; align-items: center; justify-content: center;
-  width: 16rem; max-width: 100%; height: 5rem; border: 2px dashed var(--line); border-radius: 8px;
-  color: var(--ink-faint); font-size: .9rem; text-decoration: none;
-}
-.sponsor-placeholder:hover { border-color: var(--ink-faint); }
-@media (max-width: 30rem) { .sponsor-tier--diamond .sponsor-logo { height: auto; max-width: 100%; } }
+.sponsor-tier--startup .sponsor-logo { height: 7.5rem; max-width: 7.5rem; }
+@media (max-width: 30rem) { .sponsor-tier--platinum .sponsor-logo, .sponsor-tier--diamond .sponsor-logo { height: auto; max-width: 100%; } }
 
 /* ============================================================================
    CONTENT PAGES (Markdown + Astro)
