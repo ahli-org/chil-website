@@ -20,7 +20,7 @@ The AHLI Conference on Health, Inference, and Learning (CHIL) solicits work acro
 | Author/reviewer discussion | Friday, March 26, 2027 |
 | Meta-review deadline | Friday, April 2, 2027 |
 | Author notification | Monday, April 12, 2027 |
-| CHIL conference | June 28–30, 2027 _(tentative)_ |
+| CHIL conference | June 28–30, 2027 |
 
 ### Topics of Interest
 
