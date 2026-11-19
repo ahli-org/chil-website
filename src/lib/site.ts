@@ -33,7 +33,7 @@ export const SITE = {
   presentedBy: '',
   description:
     'AHLI CHIL is designed to spark insight-driven discussions among clinicians and researchers, from industry and academia, in machine learning, health policy, causality, fairness, and other related areas.',
-  dates: 'June 2027',
+  dates: 'June 28-30 2027',
   location: 'Chicago, IL',
   // Venue not yet confirmed. Fill in name/building/address once it is.
   venue: {
